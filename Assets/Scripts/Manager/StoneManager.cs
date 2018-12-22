@@ -118,31 +118,8 @@ public class StoneManager : MonoBehaviour
         //着手を記録
         RecordMove(color, putIndex, moveCount, prisonerList, isKo, koIndex);
 
-        //デバッグ用
-//        string debugStr = "\n";
-//        for (int di = 1; di < BOARD_SIZE - 1; di++)
-//        {
-//            for (int dj = 1; dj < BOARD_SIZE - 1; dj++)
-//            {
-//                if (board[di, dj] == 0)
-//                {
-//                    debugStr += "●";
-//                }
-//                else if (board[di, dj] == 1)
-//                {
-//                    debugStr += "○";
-//                }
-//                else
-//                {
-//                    debugStr += "+";
-//                }
-//                debugStr += ",";
-//            }
-//
-//            debugStr += "\n";
-//        }
-//
-//        Debug.LogError("PutStone:" + debugStr);
+        //現在の盤面をログ出力
+        //GoUtil.PrintBoard(board, BOARD_SIZE);
 
         return board;
     }

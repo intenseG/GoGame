@@ -13,8 +13,9 @@ public class GoEstimator : MonoBehaviour
     public enum RequestState
     {
         Empty = 0,
-        Success = 1,
-        Error = 2
+        Processing = 1,
+        Success = 2,
+        Error = 3
     }
 
     public TextAsset sgfFile;
@@ -30,7 +31,7 @@ public class GoEstimator : MonoBehaviour
 
     public void GetResult()
     {
-        stateNum = (int)RequestState.Empty;
+        stateNum = (int)RequestState.Processing;
         result = "";
         //sgfFileName = fileName;
 
@@ -41,7 +42,7 @@ public class GoEstimator : MonoBehaviour
         int count = 0;
         while (true)
         {
-            if (result.Length > 1 && stateNum != (int)RequestState.Empty) break;
+            if (result.Length > 1 && stateNum == (int) RequestState.Success) break;
             count++;
             if (count > 10000)
             {

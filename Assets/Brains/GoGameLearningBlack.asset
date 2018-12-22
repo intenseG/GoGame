@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: GoGameLearningBlack
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 246
+    vectorObservationSize: 165
     numStackedVectorObservations: 7
     vectorActionSize: 52000000
     cameraResolutions: []

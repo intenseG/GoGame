@@ -16,26 +16,26 @@ public class GoAgent : Agent {
 
     //リセット時に呼ばれる
     public override void AgentReset () {
-        turns = new List<float[]> ();
-        float[] turnB = new float[82];
-        for (int i = 0; i < 82; i++) {
-            turnB[i] = 0;
-        }
+        // turns = new List<float[]> ();
+        // float[] turnB = new float[82];
+        // for (int i = 0; i < 82; i++) {
+        //     turnB[i] = 0;
+        // }
 
-        turns.Add (turnB);
+        // turns.Add (turnB);
 
-        float[] turnW = new float[82];
-        for (int j = 0; j < 82; j++) {
-            turnW[j] = 1;
-        }
+        // float[] turnW = new float[82];
+        // for (int j = 0; j < 82; j++) {
+        //     turnW[j] = 1;
+        // }
 
-        turns.Add (turnW);
+        // turns.Add (turnW);
 
         names = new string[2];
         names[0] = "GoAgent0";
         names[1] = "GoAgent1";
 
-        Debug.Log ("Agent Reset");
+        //Debug.Log ("Agent Reset");
         this.area.AreaReset (agentId);
     }
 
@@ -44,9 +44,9 @@ public class GoAgent : Agent {
 
         //手番
         if (agentId == area.GetFirstAgentId ()) {
-            AddVectorObs (turns[0]);
+            AddVectorObs (0);
         } else {
-            AddVectorObs (turns[1]);
+            AddVectorObs (1);
         }
 
         //現在の盤面を取得
@@ -98,9 +98,9 @@ public class GoAgent : Agent {
     //ステップ毎に呼ばれる
     public override void AgentAction (float[] vectorAction, string textAction) {
         //Debug.Log((int)vectorAction[0]);
-        Debug.Log("AgentId: " + agentId);
+        //Debug.Log("AgentId: " + agentId);
         if (GoArea.currentTurn != agentId) return;
-        Debug.Log("GoArea.currentTurn != agentId OK!");
+        //Debug.Log("GoArea.currentTurn != agentId OK!");
 
         if (!GoArea.isPlayMode) {
             //学習モード
@@ -113,7 +113,6 @@ public class GoAgent : Agent {
                 //Debug.Log ("COMの行動");
                 this.area.AreaAction (this.agentId, (int) vectorAction[0], false);
             } else if (GoArea.currentTurn == 1) {
-                //Player用
                 //Debug.Log ("Playerの行動");
                 this.area.AreaAction (this.agentId, selectedAction, true);
             }
@@ -128,22 +127,17 @@ public class GoAgent : Agent {
 
     private void FixedUpdate () {
         if (GoArea.moveList == null) return;
-        Debug.Log("AgentId: " + agentId);
         if (GoArea.currentTurn != agentId) return;
-        Debug.Log("area.GetTurn () != agentId: OK!");
         if (area.GetTurnCount () >= GoArea.MAX_MOVE_COUNT || GoArea.isFinish) return;
-        Debug.Log("area.GetTurnCount () >= GoArea.MAX_MOVE_COUNT || GoArea.isFinish: OK!");
 
         if (!GoArea.isPlayMode) {
-            Debug.Log("agentId: " + agentId + "  area.inAction: " + !area.inAction + "  GoArea.currentTurn == agentId: " + (GoArea.currentTurn == agentId));
+            //Debug.Log("agentId: " + agentId + "  area.inAction: " + !area.inAction + "  GoArea.currentTurn == agentId: " + (GoArea.currentTurn == agentId));
             if (!area.inAction) {
-                //area.inAction = true;
                 RequestDecision ();
             }
         } else {
-            Debug.Log("agentId: " + agentId + "  area.inAction: " + !area.inAction + "  GoArea.currentTurn == agentId: " + (GoArea.currentTurn == agentId));
+            //Debug.Log("agentId: " + agentId + "  area.inAction: " + !area.inAction + "  GoArea.currentTurn == agentId: " + (GoArea.currentTurn == agentId));
             if (!area.inAction && agentId == 0) {
-                //area.inAction = true;
                 RequestDecision ();
             }
         }
