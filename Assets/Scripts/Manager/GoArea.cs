@@ -38,6 +38,7 @@ public class GoArea : MonoBehaviour {
     private bool isCreated; //初期化フラグ
     public static bool isFinish; //終局フラグ
     public static int currentTurn; //現在の手番
+    public static bool isPlayMode; //プレイモード: True, 学習モード: False    private int passCount; //連続パス回数
     private int passCount; //連続パス回数
 
     [HideInInspector] public bool inAction;
@@ -58,7 +59,11 @@ public class GoArea : MonoBehaviour {
         if (goban.childCount > 0) isCreated = true;
         if (agentId == 0) {
             if (isCreated) {
-                goban.DestroyChildObject ();
+                var stones = goban.GetComponentsInChildren<Image>();
+                foreach (var s in stones) {
+                    s.sprite = null;
+                    s.gameObject.SetActive(false);
+                }
             } else {
                 //先攻Agentをランダムに決める
                 //this.first = Random.Range(0, 2);
@@ -93,10 +98,14 @@ public class GoArea : MonoBehaviour {
 
                     //着手ボタンのクリックイベントを設定
                     stoneList[index].confirmButton.onClick.AddListener (() => this.DecidePlayerAction (1, index));
-                    //着手ボタンを有効化
-                    stoneList[index].confirmButton.gameObject.SetActive (true);
-                    //着手ボタンを無効化
-                    //stoneList[index].confirmButton.gameObject.SetActive (false);
+
+                    if (isPlayMode) {
+                        //着手ボタンを有効化
+                        stoneList[index].confirmButton.gameObject.SetActive (true);
+                    } else {
+                        //着手ボタンを無効化
+                        stoneList[index].confirmButton.gameObject.SetActive (false);
+                    }
 
                     //碁石オブジェクトを初期化
                     stoneList[index].InitStone (index, (int) StoneManager.State.NONE);
@@ -124,11 +133,13 @@ public class GoArea : MonoBehaviour {
     public void AreaAction (int agentId, int action, bool isPlayer) {
         Debug.Log ("agentID: " + agentId);
         Debug.Log ("Action: " + action);
-        Debug.Log ("GetTurn(): " + GetTurn());
+        Debug.Log ("currentTurn: " + currentTurn);
         //Agentのターンでない時は無処理
-        if (GetTurn () != agentId) return;
+        if (currentTurn != agentId) return;
 
-        Debug.Log("手番判定通った！");
+        inAction = true;
+
+        Debug.Log ("手番判定通った！");
 
         if (action == 81) {
             //パス
@@ -140,14 +151,14 @@ public class GoArea : MonoBehaviour {
             int[] indexArray = GoUtil.TapIndexToXY (action);
             int x = indexArray[0];
             int y = indexArray[1];
-            Debug.LogWarning((GetTurnCount() + 1) + "手目" + "  Action: " + action + "  Index: " + x + "-" + y);
+            Debug.LogWarning ((GetTurnCount () + 1) + "手目" + "  Action: " + action + "  Index: " + x + "-" + y);
 
             if (points[x, y] != (int) StoneManager.State.NONE) {
                 inAction = false;
                 return;
             }
 
-            Debug.Log("空点判定通った！");
+            Debug.Log ("空点判定通った！");
 
             //碁石の色を取得
             int color = -1;
@@ -158,11 +169,11 @@ public class GoArea : MonoBehaviour {
             }
 
             if (action != -1 && stoneList[action].CheckLegal (color, x, y, points)) {
-                Debug.Log("CheckLegal通った！");
+                Debug.Log ("CheckLegal通った！");
                 int mlCount = moveList.Count;
                 if (mlCount == 0 || (mlCount >= 1 && !moveList[mlCount - 1].isKo) ||
                     (moveList[mlCount - 1].isKo && moveList[mlCount - 1].koIndex != action)) {
-                    Debug.Log("コウ判定通った！");
+                    Debug.Log ("コウ判定通った！");
 
                     //碁石を配置
                     points = stoneList[action].PutStone (points, action, color, moveList.Count + 1);
@@ -186,7 +197,7 @@ public class GoArea : MonoBehaviour {
                 } else {
                     Debug.LogWarning ("コウのルール違反！");
                     points[x, y] = (int) StoneManager.State.NONE;
-                    this.agent[agentId].AddReward (-0.05f);
+                    this.agent[agentId].AddReward (-0.1f);
                     inAction = false;
                 }
             }
@@ -207,7 +218,7 @@ public class GoArea : MonoBehaviour {
                             if (stoneList[action].CheckLegalIsExist (points, i, j, color)) {
                                 Debug.LogError ("打てる場所があります！");
                                 isFinish = false;
-                                this.agent[agentId].AddReward (-0.05f);
+                                this.agent[agentId].AddReward (-0.1f);
                                 isExist = true;
                             } else {
                                 isFinish = true;
@@ -238,7 +249,7 @@ public class GoArea : MonoBehaviour {
         //Debug.LogError("デバッグ用出力 points:\n" + debugStr);
 
         if (GetTurnCount () >= MAX_MOVE_COUNT || isFinish) {
-            if (agentId == 0) {
+            if (currentTurn != agentId) {
                 //対局結果をサーバーのgnugoで判定する
                 StartCoroutine (DetermineResult ());
             }
@@ -295,6 +306,10 @@ public class GoArea : MonoBehaviour {
                 //対局結果を含めてSGFを保存
                 GoUtil.SaveSGF (GoEstimator.result, agent[black].names[black], agent[white].names[white]);
                 //Debug.Log("SGFで保存しました！");
+
+                //現在の手番をリセット
+                currentTurn = 0;
+
                 this.agent[0].Done ();
                 this.agent[1].Done ();
 

@@ -1008,8 +1008,11 @@ namespace MLAgents
                 AgentOnDone();
             }
 
+            Debug.Log("brain != null: " + (brain != null));
+
             if ((requestAction) && (brain != null))
             {
+                Debug.Log("requestAction OK!");
                 requestAction = false;
                 AgentAction(action.vectorActions, action.textActions);
             }
