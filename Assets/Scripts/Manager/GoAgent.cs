@@ -35,6 +35,7 @@ public class GoAgent : Agent {
         names[0] = "GoAgent0";
         names[1] = "GoAgent1";
 
+        Debug.Log ("Agent Reset");
         this.area.AreaReset (agentId);
     }
 
@@ -97,32 +98,36 @@ public class GoAgent : Agent {
     //ステップ毎に呼ばれる
     public override void AgentAction (float[] vectorAction, string textAction) {
         //Debug.Log((int)vectorAction[0]);
+        Debug.Log("AgentId: " + agentId);
+        Debug.Log("area.GetTurn (): " + area.GetTurn ());
         if (area.GetTurn () != agentId) return;
+        Debug.Log("area.GetTurn () != agentId -> 通過");
         if (area.GetTurnCount () >= GoArea.MAX_MOVE_COUNT || GoArea.isFinish) return;
-        if (!area.inAction) {
-            if (area.currentTurn == 0) {
-                area.inAction = true;
-                Debug.Log ("Internalの行動");
-                this.area.AreaAction (this.agentId, (int) vectorAction[0], false, false);
-                Debug.Log ("[Internal] area.inAction: " + area.inAction);
-            } else if (area.currentTurn == 1) {
-                //Player用
-                area.inAction = true;
-                Debug.Log ("Playerの行動");
-                this.area.AreaAction (this.agentId, selectedAction, true, false);
-                selectedAction = -1;
-                Debug.Log ("[Player] area.inAction: " + area.inAction);
-            }
+        Debug.Log("area.GetTurnCount () >= GoArea.MAX_MOVE_COUNT || GoArea.isFinish -> 通過");
+
+        if (GoArea.currentTurn == 0) {
+            Debug.Log ("Internalの行動");
+            this.area.AreaAction (this.agentId, (int) vectorAction[0], false);
+            //Debug.Log ("[Internal] area.inAction: " + area.inAction);
+        } else if (GoArea.currentTurn == 1) {
+            //Player用
+            Debug.Log ("Playerの行動");
+            this.area.AreaAction (this.agentId, selectedAction, true);
+            //selectedAction = -1;
+            //Debug.Log ("[Player] area.inAction: " + area.inAction);
         }
     }
 
     public void SetSelectAction (int action) {
         this.selectedAction = action;
+        area.inAction = true;
+        RequestDecision ();
     }
 
     private void FixedUpdate () {
         if (GoArea.moveList == null) return;
-        if (!area.inAction && area.currentTurn == agentId) {
+        if (!area.inAction && agentId == 0 && GoArea.currentTurn == agentId) {
+            area.inAction = true;
             RequestDecision ();
         }
     }

@@ -37,7 +37,7 @@ public class GoArea : MonoBehaviour {
 
     private bool isCreated; //初期化フラグ
     public static bool isFinish; //終局フラグ
-    public int currentTurn; //現在の手番
+    public static int currentTurn; //現在の手番
     private int passCount; //連続パス回数
 
     [HideInInspector] public bool inAction;
@@ -56,13 +56,17 @@ public class GoArea : MonoBehaviour {
 
         //碁石のプレハブを生成済みかどうかの判定フラグを取得
         if (goban.childCount > 0) isCreated = true;
-        if (agentId == 0 && !isCreated) {
-            //先攻Agentをランダムに決める
-            //this.first = Random.Range(0, 2);
+        if (agentId == 0) {
+            if (isCreated) {
+                goban.DestroyChildObject ();
+            } else {
+                //先攻Agentをランダムに決める
+                //this.first = Random.Range(0, 2);
 
-            //GoAgent0を先番に固定
-            this.first = 0;
-            Debug.Log ("先攻AgentId -> " + first);
+                //GoAgent0を先番に固定
+                this.first = 0;
+                Debug.Log ("先攻AgentId -> " + first);
+            }
         }
 
         //碁石のプレハブを生成
@@ -74,9 +78,11 @@ public class GoArea : MonoBehaviour {
 
                 //碁盤配列を初期化
                 points[x, y] = (int) StoneManager.State.NONE;
-                if (agentId == 0 && !isCreated) {
+                if (agentId == 0) {
                     //碁石オブジェクトを碁盤の子に設定
                     GameObject obj = SetChild (goban.gameObject, stonePrefab).gameObject;
+                    //碁石オブジェクトをアクティブにする
+                    obj.SetActive (true);
                     //碁石オブジェクト名をインデックスに設定
                     obj.name = index.ToString ();
                     //スクリプトを取得してリストに追加
@@ -86,7 +92,7 @@ public class GoArea : MonoBehaviour {
                     stoneList[index].confirmButton.gameObject.name = index.ToString ();
 
                     //着手ボタンのクリックイベントを設定
-                    stoneList[index].confirmButton.onClick.AddListener (() => this.DecidePlayerAction (agentId, index));
+                    stoneList[index].confirmButton.onClick.AddListener (() => this.DecidePlayerAction (1, index));
                     //着手ボタンを有効化
                     stoneList[index].confirmButton.gameObject.SetActive (true);
                     //着手ボタンを無効化
@@ -115,28 +121,33 @@ public class GoArea : MonoBehaviour {
     }
 
     //アクションの適用
-    public void AreaAction (int agentId, int action, bool isPlayer, bool isInternal) {
+    public void AreaAction (int agentId, int action, bool isPlayer) {
         Debug.Log ("agentID: " + agentId);
         Debug.Log ("Action: " + action);
+        Debug.Log ("GetTurn(): " + GetTurn());
         //Agentのターンでない時は無処理
-        if (GetTurn () != agentId) {
-            return;
-        }
+        if (GetTurn () != agentId) return;
+
+        Debug.Log("手番判定通った！");
 
         if (action == 81) {
             //パス
             PassMove (agentId);
+            //現在の手番を更新
+            currentTurn = ChangeTurn (agentId);
         } else {
             //1次元配列形式のインデックスを2次元配列形式に変換
             int[] indexArray = GoUtil.TapIndexToXY (action);
             int x = indexArray[0];
             int y = indexArray[1];
-            //Debug.LogWarning((GetTurnCount() + 1) + "手目" + "  Action: " + action + "  Index: " + x + "-" + y);
+            Debug.LogWarning((GetTurnCount() + 1) + "手目" + "  Action: " + action + "  Index: " + x + "-" + y);
 
             if (points[x, y] != (int) StoneManager.State.NONE) {
                 inAction = false;
                 return;
             }
+
+            Debug.Log("空点判定通った！");
 
             //碁石の色を取得
             int color = -1;
@@ -147,9 +158,11 @@ public class GoArea : MonoBehaviour {
             }
 
             if (action != -1 && stoneList[action].CheckLegal (color, x, y, points)) {
+                Debug.Log("CheckLegal通った！");
                 int mlCount = moveList.Count;
                 if (mlCount == 0 || (mlCount >= 1 && !moveList[mlCount - 1].isKo) ||
                     (moveList[mlCount - 1].isKo && moveList[mlCount - 1].koIndex != action)) {
+                    Debug.Log("コウ判定通った！");
 
                     //碁石を配置
                     points = stoneList[action].PutStone (points, action, color, moveList.Count + 1);
@@ -159,44 +172,16 @@ public class GoArea : MonoBehaviour {
                         foreach (int prisoner in moveList[moveList.Count - 1].prisonerList) {
                             //Debug.Log("取石Index -> " + prisoner);
                             points = stoneList[prisoner].SetPrisoner (points, prisoner, (int) StoneManager.State.NONE);
-
-                            //既にMoveListに要素が追加されてるから、先攻Agentが後攻Agentの石を取ったとき、GetTurn()が1になる
-                            //                        if (GetTurn() == 1)
-                            //                        {
-                            //                            //this.agent[0].AddReward(0.1f);
-                            //                            //this.agent[1].AddReward(-0.1f);
-                            //                            prisonerCountB++;
-                            //                            //scoreObj[0].text = prisonerCountB.ToString() + " points";
-                            //                        }
-                            //                        else if (GetTurn() == 0)
-                            //                        {
-                            //                            //this.agent[1].AddReward(0.1f);
-                            //                            //this.agent[0].AddReward(-0.1f);
-                            //                            prisonerCountW++;
-                            //                            //scoreObj[1].text = prisonerCountW.ToString() + " points";
-                            //                        }
                         }
 
                         //取石リストをリセット
                         stoneList[action].ClearPrisonerList ();
-
-                        //int prevIndex = moveList[mlCount].putIndex;
-                        //stoneList[prevIndex].ClearStoneNum();
-
-                        //取石数をカウント
-                        // if (GetTurn() == 1)
-                        // {
-                        //     prisonerCountB += moveList[moveList.Count - 1].prisonerList.Count;
-                        // }
-                        // else if (GetTurn() == 0)
-                        // {
-                        //     prisonerCountW += moveList[moveList.Count - 1].prisonerList.Count;
-                        // }
                     }
 
                     //現在の手番を更新
                     currentTurn = ChangeTurn (agentId);
 
+                    passCount = 0;
                     inAction = false;
                 } else {
                     Debug.LogWarning ("コウのルール違反！");
@@ -225,7 +210,6 @@ public class GoArea : MonoBehaviour {
                                 this.agent[agentId].AddReward (-0.05f);
                                 isExist = true;
                             } else {
-                                //Debug.LogError("置ける場所ではありません！");
                                 isFinish = true;
                             }
 
@@ -254,20 +238,11 @@ public class GoArea : MonoBehaviour {
         //Debug.LogError("デバッグ用出力 points:\n" + debugStr);
 
         if (GetTurnCount () >= MAX_MOVE_COUNT || isFinish) {
-            //先攻のagent番号を求める
-            int black = first == 0 ? 0 : 1;
-            int white = black == 0 ? 1 : 0;
-
-            GoUtil.SaveGamestate (moveList, BOARD_SIZE - 2, BOARD_SIZE - 2, 7, GoEstimator.result,
-                agent[black].names[black], agent[white].names[white]);
-
-            //サーバーのgnugoを起動して勝敗判定を行う
-            GoEstimator est = GameObject.Find ("GoEstimator").GetComponent<GoEstimator> ();
-            est.GetResult ();
-
-            StartCoroutine (DetermineResult ());
+            if (agentId == 0) {
+                //対局結果をサーバーのgnugoで判定する
+                StartCoroutine (DetermineResult ());
+            }
         } else {
-            //agent[agentId].isAction = true;
             inAction = false;
         }
     }
@@ -293,7 +268,6 @@ public class GoArea : MonoBehaviour {
                 //黒勝ち
                 if (finalScore.Contains ("黒")) {
                     Debug.Log ("黒勝ち");
-                    //float reward = 1.0f * (GoUtil.diffNum * 0.1f);
                     this.agent[black].AddReward (1.0f);
                     this.agent[white].AddReward (-1.0f);
                     this.agent[black].winCount++;
@@ -302,7 +276,6 @@ public class GoArea : MonoBehaviour {
                 //白勝ち
                 else if (finalScore.Contains ("白")) {
                     Debug.Log ("白勝ち");
-                    //float reward = 1.0f * (GoUtil.diffNum * 0.1f);
                     this.agent[black].AddReward (-1.0f);
                     this.agent[white].AddReward (1.0f);
                     this.agent[white].winCount++;
@@ -314,7 +287,7 @@ public class GoArea : MonoBehaviour {
                     this.agent[black].AddReward (0.5f);
                     this.agent[white].AddReward (0.5f);
                 } else {
-                    Debug.Log ("想定外の結果です。");
+                    Debug.Log ("想定外の対局結果です。");
                 }
 
                 Debug.Log (finalScore);
@@ -333,20 +306,16 @@ public class GoArea : MonoBehaviour {
                 timeOutSec -= 0.5f;
             }
         }
-
-        //yield break;
     }
 
     public void DecidePlayerAction (int agentId, int action) {
         this.agent[agentId].SetSelectAction (action);
-        //AreaAction(GetTurn(), action, true, false);
     }
 
     public int[, ] GetPreviousPoints (int[, ] board2, int k) {
         int[, ] prevBoard = new int[BOARD_SIZE, BOARD_SIZE];
         if (GetTurnCount () >= k) {
             prevBoard = GetPoints ();
-            // int moveCount = GetTurnCount();
             List<Move> tempMoveList = moveList;
 
             //1手目から(最終手 - k)までを再現する
@@ -361,8 +330,7 @@ public class GoArea : MonoBehaviour {
                 if (tempPrisonerList.Count > 0) {
                     //取石を1つずつ処理する
                     foreach (int prisoner in tempPrisonerList) {
-                        prevBoard = stoneList[prisoner]
-                            .SetPrevPrisoner (prevBoard, prisoner, (int) StoneManager.State.NONE);
+                        prevBoard = stoneList[prisoner].SetPrevPrisoner (prevBoard, prisoner, (int) StoneManager.State.NONE);
                     }
                 }
             }
@@ -386,12 +354,6 @@ public class GoArea : MonoBehaviour {
             moveList.Add (mv);
             isFinish = true;
         }
-
-        //        if (isFinish) {
-        //            //gnugoを別プロセスで起動して勝敗判定を行う
-        //            GoEstimator est = new GoEstimator();
-        //            est.GetResult();
-        //        }
     }
 
     public int[, ] InitBoard () {
@@ -447,44 +409,11 @@ public class GoArea : MonoBehaviour {
     }
 
     //ボタンのenabledを設定
-    private void SetButtonEnabled (bool isPlayer) {
+    private void SetButtonEnabled (bool isEnabled) {
         for (int i = 0; i < (BOARD_SIZE - 2) * (BOARD_SIZE - 2); i++) {
-            stoneList[i].confirmButton.gameObject.SetActive (isPlayer);
+            stoneList[i].confirmButton.gameObject.SetActive (isEnabled);
         }
     }
-
-    //勝利したかどうかを取得
-    private void IsWin () {
-        //return prisonerCountB - prisonerCountW;
-
-        //if (prisonerCountB > prisonerCountW)
-        //{
-        //    resultDiff = prisonerCountB - prisonerCountW;
-        //    return 0;
-        //}
-        //else if (prisonerCountB < prisonerCountW)
-        //{
-        //    resultDiff = prisonerCountW - prisonerCountB;
-        //    return 1;
-        //}
-        //else
-        //{
-        //    return 2;
-        //}
-
-        //gnugoを別プロセスで起動して勝敗判定を行う
-        GoEstimator est = GameObject.Find ("GoEstimator").GetComponent<GoEstimator> ();
-        est.GetResult ();
-    }
-
-    //    private void SetLastMove(int action)
-    //    {
-    //        int[] indexArray = GoUtil.TapIndexToXY(action);
-    //        int x = indexArray[0];
-    //        int y = indexArray[1];
-    //
-    //        lastMoveObj.text = GetTurnCount() + "手目: " + x + "-" + y;
-    //    }
 
     private int ReverseAgentId (int agentId) {
         return agentId == 0 ? 1 : 0;
