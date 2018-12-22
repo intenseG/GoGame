@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\inten\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\inten\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_GoGame.1329356360.00" t="ExcludeRecursive" />
+    <e p="C:\Users\inten\Desktop\ML-Agent\GoGame" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="CharacterConverter.cs" t="Include" />
+        <e p="DefaultValue.cs" t="Include" />
+        <e p="DirectoryUtils.cs" t="Include" />
+        <e p="Editor" t="Include">
+          <e p="PackageManagerAssembly" t="Include">
+            <e p="PackageImportList.txt" t="Include" />
+          </e>
+        </e>
+        <e p="GameObjectExtensions.cs" t="Include" />
+        <e p="GoAcademy.cs" t="Include" />
+        <e p="GoAgent.cs" t="Include" />
+        <e p="GoArea.cs" t="Include" />
+        <e p="GoArea_19_10.cs" t="Include" />
+        <e p="GoEstimator.cs" t="Include" />
+        <e p="GoEstimator_old.cs" t="Include" />
+        <e p="GoUtil.cs" t="Include" />
+        <e p="LineCreator.cs" t="Include" />
+        <e p="link.xml" t="Include" />
+        <e p="ML-Agents" t="Include">
+          <e p="Editor" t="Include">
+            <e p="AgentEditor.cs" t="Include" />
+            <e p="BrainEditor.cs" t="Include" />
+            <e p="BrainParametersDrawer.cs" t="Include" />
+            <e p="BroadcastHubDrawer.cs" t="Include" />
+            <e p="DemonstrationDrawer.cs" t="Include" />
+            <e p="DemonstrationImporter.cs" t="Include" />
+            <e p="HeuristicBrainEditor.cs" t="Include" />
+            <e p="LearningBrainEditor.cs" t="Include" />
+            <e p="PlayerBrainEditor.cs" t="Include" />
+            <e p="ResetParameterDrawer.cs" t="Include" />
+            <e p="Tests" t="Include">
+              <e p="DemonstrationTests.cs" t="Include" />
+              <e p="EditModeTestActionMasker.cs" t="Include" />
+              <e p="EditModeTestInternalBrainTensorApplier.cs" t="Include" />
+              <e p="EditModeTestInternalBrainTensorGenerator.cs" t="Include" />
+              <e p="MLAgentsEditModeTest.cs" t="Include" />
+              <e p="MultinomialTest.cs" t="Include" />
+              <e p="RandomNormalTest.cs" t="Include" />
+              <e p="UtilitiesTests.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Examples" t="Include">
+            <e p="3DBall" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Ball3DAcademy.cs" t="Include" />
+                <e p="Ball3DAgent.cs" t="Include" />
+                <e p="Ball3DDecision.cs" t="Include" />
+                <e p="Ball3DHardAgent.cs" t="Include" />
+              </e>
+            </e>
+            <e p="BananaCollectors" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="BananaAcademy.cs" t="Include" />
+                <e p="BananaAgent.cs" t="Include" />
+                <e p="BananaArea.cs" t="Include" />
+                <e p="BananaLogic.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Basic" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="BasicAcademy.cs" t="Include" />
+                <e p="BasicAgent.cs" t="Include" />
+                <e p="BasicDecision.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Bouncer" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="BouncerAcademy.cs" t="Include" />
+                <e p="BouncerAgent.cs" t="Include" />
+                <e p="BouncerBanana.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Crawler" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="CrawlerAcademy.cs" t="Include" />
+                <e p="CrawlerAgent.cs" t="Include" />
+              </e>
+            </e>
+            <e p="GridWorld" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="GridAcademy.cs" t="Include" />
+                <e p="GridAgent.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Hallway" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="HallwayAcademy.cs" t="Include" />
+                <e p="HallwayAgent.cs" t="Include" />
+              </e>
+            </e>
+            <e p="PushBlock" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="GoalDetect.cs" t="Include" />
+                <e p="PushAgentBasic.cs" t="Include" />
+                <e p="PushBlockAcademy.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Pyramids" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="PyramidAcademy.cs" t="Include" />
+                <e p="PyramidAgent.cs" t="Include" />
+                <e p="PyramidArea.cs" t="Include" />
+                <e p="PyramidSwitch.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Reacher" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ReacherAcademy.cs" t="Include" />
+                <e p="ReacherAgent.cs" t="Include" />
+                <e p="ReacherDecision.cs" t="Include" />
+                <e p="ReacherGoal.cs" t="Include" />
+              </e>
+            </e>
+            <e p="SharedAssets" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="AdjustTrainingTimescale.cs" t="Include" />
+                <e p="Area.cs" t="Include" />
+                <e p="CameraFollow.cs" t="Include" />
+                <e p="FlyCamera.cs" t="Include" />
+                <e p="GroundContact.cs" t="Include" />
+                <e p="JointDriveController.cs" t="Include" />
+                <e p="RandomDecision.cs" t="Include" />
+                <e p="RayPerception.cs" t="Include" />
+                <e p="TargetContact.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Soccer" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="AgentSoccer.cs" t="Include" />
+                <e p="SoccerAcademy.cs" t="Include" />
+                <e p="SoccerBallController.cs" t="Include" />
+                <e p="SoccerFieldArea.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Template" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="TemplateAcademy.cs" t="Include" />
+                <e p="TemplateAgent.cs" t="Include" />
+                <e p="TemplateDecision.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Tennis" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="HitWall.cs" t="Include" />
+                <e p="TennisAcademy.cs" t="Include" />
+                <e p="TennisAgent.cs" t="Include" />
+                <e p="TennisArea.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Walker" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="WalkerAcademy.cs" t="Include" />
+                <e p="WalkerAgent.cs" t="Include" />
+              </e>
+            </e>
+            <e p="WallJump" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="WallJumpAcademy.cs" t="Include" />
+                <e p="WallJumpAgent.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Academy.cs" t="Include" />
+            <e p="ActionMasker.cs" t="Include" />
+            <e p="Agent.cs" t="Include" />
+            <e p="Batcher.cs" t="Include" />
+            <e p="BCTeacherHelper.cs" t="Include" />
+            <e p="Brain.cs" t="Include" />
+            <e p="BrainParameters.cs" t="Include" />
+            <e p="BroadcastHub.cs" t="Include" />
+            <e p="Communicator.cs" t="Include" />
+            <e p="CommunicatorObjects" t="Include">
+              <e p="AgentActionProto.cs" t="Include" />
+              <e p="AgentInfoProto.cs" t="Include" />
+              <e p="BrainParametersProto.cs" t="Include" />
+              <e p="CommandProto.cs" t="Include" />
+              <e p="DemonstrationMetaProto.cs" t="Include" />
+              <e p="EngineConfigurationProto.cs" t="Include" />
+              <e p="EnvironmentParametersProto.cs" t="Include" />
+              <e p="Header.cs" t="Include" />
+              <e p="ResolutionProto.cs" t="Include" />
+              <e p="SpaceTypeProto.cs" t="Include" />
+              <e p="UnityInput.cs" t="Include" />
+              <e p="UnityMessage.cs" t="Include" />
+              <e p="UnityOutput.cs" t="Include" />
+              <e p="UnityRlInitializationInput.cs" t="Include" />
+              <e p="UnityRlInitializationOutput.cs" t="Include" />
+              <e p="UnityRlInput.cs" t="Include" />
+              <e p="UnityRlOutput.cs" t="Include" />
+              <e p="UnityToExternal.cs" t="Include" />
+              <e p="UnityToExternalGrpc.cs" t="Include" />
+            </e>
+            <e p="Decision.cs" t="Include" />
+            <e p="Demonstration.cs" t="Include" />
+            <e p="DemonstrationRecorder.cs" t="Include" />
+            <e p="DemonstrationStore.cs" t="Include" />
+            <e p="HeuristicBrain.cs" t="Include" />
+            <e p="InferenceBrain" t="Include">
+              <e p="ApplierImpl.cs" t="Include" />
+              <e p="GeneratorImpl.cs" t="Include" />
+              <e p="ModelParamLoader.cs" t="Include" />
+              <e p="Tensor.cs" t="Include" />
+              <e p="TensorApplier.cs" t="Include" />
+              <e p="TensorGenerator.cs" t="Include" />
+              <e p="TensorNames.cs" t="Include" />
+              <e p="TFSharpInferenceEngine.cs" t="Include" />
+              <e p="Utils" t="Include">
+                <e p="Multinomial.cs" t="Include" />
+                <e p="RandomNormal.cs" t="Include" />
+              </e>
+            </e>
+            <e p="LearningBrain.cs" t="Include" />
+            <e p="Monitor.cs" t="Include" />
+            <e p="PlayerBrain.cs" t="Include" />
+            <e p="ResetParameters.cs" t="Include" />
+            <e p="RpcCommunicator.cs" t="Include" />
+            <e p="SocketCommunicator.cs" t="Include" />
+            <e p="UnityAgentsException.cs" t="Include" />
+            <e p="Utilities.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Move.cs" t="Include" />
+        <e p="Plugins" t="Include">
+          <e p="Easy Save 3" t="Include">
+            <e p="Editor" t="Include">
+              <e p="AddES3Prefab.cs" t="Include" />
+              <e p="AutoSaveWindow.cs" t="Include" />
+              <e p="ES3AutoSaveEditor.cs" t="Include" />
+              <e p="ES3AutoSaveMgrEditor.cs" t="Include" />
+              <e p="ES3ClassTypeTemplate.txt" t="Include" />
+              <e p="ES3ComponentTypeTemplate.txt" t="Include" />
+              <e p="ES3EditorStyle.cs" t="Include" />
+              <e p="ES3EditorUtility.cs" t="Include" />
+              <e p="ES3InspectorInfoEditor.cs" t="Include" />
+              <e p="ES3PlayMakerEditor.cs" t="Include" />
+              <e p="ES3Postprocessor.cs" t="Include" />
+              <e p="ES3PrefabEditor.cs" t="Include" />
+              <e p="ES3ReferenceMgrEditor.cs" t="Include" />
+              <e p="ES3SettingsEditor.cs" t="Include" />
+              <e p="ES3Type_MaterialTemplate.txt" t="Include" />
+              <e p="ES3TypeTemplate.txt" t="Include" />
+              <e p="ES3ValueTypeTemplate.txt" t="Include" />
+              <e p="ES3Window.cs" t="Include" />
+              <e p="HomeWindow.cs" t="Include" />
+              <e p="SettingsWindow.cs" t="Include" />
+              <e p="ToolsWindow.cs" t="Include" />
+              <e p="TypesWindow.cs" t="Include" />
+            </e>
+            <e p="link.xml" t="Include" />
+            <e p="PlayMaker" t="Include">
+              <e p="ES3PlayMaker.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Auto Save" t="Include">
+                <e p="ES3AutoSave.cs" t="Include" />
+                <e p="ES3AutoSaveMgr.cs" t="Include" />
+              </e>
+              <e p="Debugging" t="Include">
+                <e p="ES3Debug.cs" t="Include" />
+              </e>
+              <e p="ES3.cs" t="Include" />
+              <e p="ES3Crypto.cs" t="Include" />
+              <e p="ES3File.cs" t="Include" />
+              <e p="ES3InspectorInfo.cs" t="Include" />
+              <e p="ES3IO.cs" t="Include" />
+              <e p="ES3Prefab.cs" t="Include" />
+              <e p="ES3ReferenceMgr.cs" t="Include" />
+              <e p="ES3ReferenceMgrBase.cs" t="Include" />
+              <e p="ES3Reflection.cs" t="Include" />
+              <e p="ES3SerializableDictionary.cs" t="Include" />
+              <e p="ES3Spreadsheet.cs" t="Include" />
+              <e p="Readers" t="Include">
+                <e p="ES3JSONReader.cs" t="Include" />
+                <e p="ES3Reader.cs" t="Include" />
+              </e>
+              <e p="Settings" t="Include">
+                <e p="ES3DefaultSettings.cs" t="Include" />
+                <e p="ES3Settings.cs" t="Include" />
+              </e>
+              <e p="Streams" t="Include">
+                <e p="ES3FileStream.cs" t="Include" />
+                <e p="ES3PlayerPrefsStream.cs" t="Include" />
+                <e p="ES3ResourcesStream.cs" t="Include" />
+                <e p="ES3Stream.cs" t="Include" />
+              </e>
+              <e p="Types" t="Include">
+                <e p="Collection Types" t="Include">
+                  <e p="ES32DArrayType.cs" t="Include" />
+                  <e p="ES33DArrayType.cs" t="Include" />
+                  <e p="ES3ArrayType.cs" t="Include" />
+                  <e p="ES3CollectionType.cs" t="Include" />
+                  <e p="ES3DictionaryType.cs" t="Include" />
+                  <e p="ES3HashSetType.cs" t="Include" />
+                  <e p="ES3ListType.cs" t="Include" />
+                  <e p="ES3QueueType.cs" t="Include" />
+                  <e p="ES3StackType.cs" t="Include" />
+                </e>
+                <e p="ES3ComponentType.cs" t="Include" />
+                <e p="ES3ObjectType.cs" t="Include" />
+                <e p="ES3Property.cs" t="Include" />
+                <e p="ES3ScriptableObjectType.cs" t="Include" />
+                <e p="ES3Type.cs" t="Include" />
+                <e p="ES3TypeMgr.cs" t="Include" />
+                <e p="ES3UnityObjectType.cs" t="Include" />
+                <e p="Primitive Types" t="Include">
+                  <e p="ES3Type_bool.cs" t="Include" />
+                  <e p="ES3Type_byte.cs" t="Include" />
+                  <e p="ES3Type_byteArray.cs" t="Include" />
+                  <e p="ES3Type_char.cs" t="Include" />
+                  <e p="ES3Type_DateTime.cs" t="Include" />
+                  <e p="ES3Type_decimal.cs" t="Include" />
+                  <e p="ES3Type_double.cs" t="Include" />
+                  <e p="ES3Type_enum.cs" t="Include" />
+                  <e p="ES3Type_float.cs" t="Include" />
+                  <e p="ES3Type_int.cs" t="Include" />
+                  <e p="ES3Type_intptr.cs" t="Include" />
+                  <e p="ES3Type_long.cs" t="Include" />
+                  <e p="ES3Type_sbyte.cs" t="Include" />
+                  <e p="ES3Type_short.cs" t="Include" />
+                  <e p="ES3Type_string.cs" t="Include" />
+                  <e p="ES3Type_uint.cs" t="Include" />
+                  <e p="ES3Type_UIntPtr.cs" t="Include" />
+                  <e p="ES3Type_ulong.cs" t="Include" />
+                  <e p="ES3Type_ushort.cs" t="Include" />
+                </e>
+                <e p="Reflected Types" t="Include">
+                  <e p="ES3ReflectedComponentType.cs" t="Include" />
+                  <e p="ES3ReflectedObjectType.cs" t="Include" />
+                  <e p="ES3ReflectedScriptableObjectType.cs" t="Include" />
+                  <e p="ES3ReflectedType.cs" t="Include" />
+                  <e p="ES3ReflectedUnityObjectType.cs" t="Include" />
+                  <e p="ES3ReflectedValueType.cs" t="Include" />
+                </e>
+                <e p="Unity Types" t="Include">
+                  <e p="Component Types" t="Include">
+                    <e p="ES3Type_BoxCollider.cs" t="Include" />
+                    <e p="ES3Type_BoxCollider2D.cs" t="Include" />
+                    <e p="ES3Type_Camera.cs" t="Include" />
+                    <e p="ES3Type_CapsuleCollider.cs" t="Include" />
+                    <e p="ES3Type_EventSystem.cs" t="Include" />
+                    <e p="ES3Type_MeshCollider.cs" t="Include" />
+                    <e p="ES3Type_MeshFilter.cs" t="Include" />
+                    <e p="ES3Type_MeshRenderer.cs" t="Include" />
+                    <e p="ES3Type_ParticleSystem.cs" t="Include" />
+                    <e p="ES3Type_PolygonCollider2D.cs" t="Include" />
+                    <e p="ES3Type_SphereCollider.cs" t="Include" />
+                    <e p="ES3Type_Text.cs" t="Include" />
+                    <e p="ES3Type_Transform.cs" t="Include" />
+                  </e>
+                  <e p="ES3Type_AnimationCurve.cs" t="Include" />
+                  <e p="ES3Type_AudioClip.cs" t="Include" />
+                  <e p="ES3Type_BoneWeight.cs" t="Include" />
+                  <e p="ES3Type_Bounds.cs" t="Include" />
+                  <e p="ES3Type_CollisionModule.cs" t="Include" />
+                  <e p="ES3Type_Color.cs" t="Include" />
+                  <e p="ES3Type_Color32.cs" t="Include" />
+                  <e p="ES3Type_ColorBySpeedModule.cs" t="Include" />
+                  <e p="ES3Type_ColorOverLifetimeModule.cs" t="Include" />
+                  <e p="ES3Type_EmissionModule.cs" t="Include" />
+                  <e p="ES3Type_ExternalForcesModule.cs" t="Include" />
+                  <e p="ES3Type_Flare.cs" t="Include" />
+                  <e p="ES3Type_Font.cs" t="Include" />
+                  <e p="ES3Type_ForceOverLifetimeModule.cs" t="Include" />
+                  <e p="ES3Type_GameObject.cs" t="Include" />
+                  <e p="ES3Type_Gradient.cs" t="Include" />
+                  <e p="ES3Type_GradientAlphaKey.cs" t="Include" />
+                  <e p="ES3Type_GradientColorKey.cs" t="Include" />
+                  <e p="ES3Type_InheritVelocityModule.cs" t="Include" />
+                  <e p="ES3Type_Keyframe.cs" t="Include" />
+                  <e p="ES3Type_LayerMask.cs" t="Include" />
+                  <e p="ES3Type_Light.cs" t="Include" />
+                  <e p="ES3Type_LightsModule.cs" t="Include" />
+                  <e p="ES3Type_LimitVelocityOverLifetimeModule.cs" t="Include" />
+                  <e p="ES3Type_MainModule.cs" t="Include" />
+                  <e p="ES3Type_Material.cs" t="Include" />
+                  <e p="ES3Type_Matrix4x4.cs" t="Include" />
+                  <e p="ES3Type_Mesh.cs" t="Include" />
+                  <e p="ES3Type_MinMaxCurve.cs" t="Include" />
+                  <e p="ES3Type_MinMaxGradient.cs" t="Include" />
+                  <e p="ES3Type_NoiseModule.cs" t="Include" />
+                  <e p="ES3Type_PhysicMaterial.cs" t="Include" />
+                  <e p="ES3Type_PhysicsMaterial2D.cs" t="Include" />
+                  <e p="ES3Type_Quaternion.cs" t="Include" />
+                  <e p="ES3Type_Rect.cs" t="Include" />
+                  <e p="ES3Type_RectTransform.cs" t="Include" />
+                  <e p="ES3Type_RotationBySpeedModule.cs" t="Include" />
+                  <e p="ES3Type_RotationOverLifetimeModule.cs" t="Include" />
+                  <e p="ES3Type_Shader.cs" t="Include" />
+                  <e p="ES3Type_ShapeModule.cs" t="Include" />
+                  <e p="ES3Type_SizeBySpeedModule.cs" t="Include" />
+                  <e p="ES3Type_SizeOverLifetimeModule.cs" t="Include" />
+                  <e p="ES3Type_SkinnedMeshRenderer.cs" t="Include" />
+                  <e p="ES3Type_Sprite.cs" t="Include" />
+                  <e p="ES3Type_SpriteRenderer.cs" t="Include" />
+                  <e p="ES3Type_SubEmittersModule.cs" t="Include" />
+                  <e p="ES3Type_Texture2D.cs" t="Include" />
+                  <e p="ES3Type_TextureSheetAnimationModule.cs" t="Include" />
+                  <e p="ES3Type_TrailModule.cs" t="Include" />
+                  <e p="ES3Type_TriggerModule.cs" t="Include" />
+                  <e p="ES3Type_Vector2.cs" t="Include" />
+                  <e p="ES3Type_Vector3.cs" t="Include" />
+                  <e p="ES3Type_Vector3Int.cs" t="Include" />
+                  <e p="ES3Type_Vector4.cs" t="Include" />
+                  <e p="ES3Type_VelocityOverLifetimeModule.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Web" t="Include">
+                <e p="ES3Cloud.cs" t="Include" />
+                <e p="ES3WebClass.cs" t="Include" />
+              </e>
+              <e p="Writers" t="Include">
+                <e p="ES3JSONWriter.cs" t="Include" />
+                <e p="ES3Writer.cs" t="Include" />
+                <e p="ES3XMLWriter.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="PreLoad.cs" t="Include" />
+        <e p="SGF" t="Include">
+          <e p="test_sgf1.txt" t="Include" />
+        </e>
+        <e p="StoneManager.cs" t="Include" />
+        <e p="TictactoeAcademy.cs" t="Include" />
+        <e p="TictactoeAgent.cs" t="Include" />
+        <e p="TictactoeArea.cs" t="Include" />
+      </e>
+      <e p="GoGame.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

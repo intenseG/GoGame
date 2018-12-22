@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6db4f2d7-0caf-439b-a17a-6da6ef1b8bb0" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-477210929">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.4" value="5" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="73" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="73" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="5205" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="5205" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/GoAgent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1215">
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+              <folding>
+                <marker date="1543895454694" expanded="false" signature="6:124" ph="..." />
+                <marker date="1543895454694" expanded="true" signature="540:1607" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="659:705" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="809:855" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="994:1455" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="1056:1286" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="1142:1220" ph="/* isAction = true; ... */" />
+                <marker date="1543895454694" expanded="true" signature="1303:1445" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="1456:1601" ph="/* else ... */" />
+                <marker date="1543895454694" expanded="true" signature="1670:5827" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="1730:2340" ph="/* ターン（0：自分以外、1：自分） ... */" />
+                <marker date="1543895454694" expanded="true" signature="2480:2923" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="2515:2597" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="2778:2837" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="2854:2913" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="3048:3483" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="3083:3165" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="3338:3397" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="3414:3473" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="3524:5821" ph="/* k手前(k = 1〜7)の黒石の位置（-1:なし、0:相手の石、1:自分の石、2:パス） ... */" />
+                <marker date="1543895454694" expanded="true" signature="5829:7274" ph="/* for (int i = 1; i &lt; GoArea.BOARD_SIZE - 1; i++) ... */" />
+                <marker date="1543895454694" expanded="true" signature="7281:7595" ph="/* for (int i = 0; i &lt; this.area.GetMoveList().Count; i++) ... */" />
+                <marker date="1543895454694" expanded="true" signature="7673:8060" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="7848:8054" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="7956:8044" ph="/* Player用 ... */" />
+                <marker date="1543895454694" expanded="true" signature="8105:8180" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="8182:8404" ph="/* private float[] InitBoard9() ... */" />
+                <marker date="1543895454694" expanded="true" signature="8436:8751" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="8451:8598" ph="/* Player用 ... */" />
+                <marker date="1543895454694" expanded="true" signature="8626:8745" ph="{...}" />
+                <marker date="1543895454694" expanded="true" signature="8680:8735" ph="/* isAction = false; ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/GoArea.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="568" column="17" selection-start-line="568" selection-start-column="17" selection-end-line="568" selection-end-column="17" />
+              <folding>
+                <marker date="1543895618645" expanded="false" signature="6:113" ph="..." />
+                <marker date="1543895618645" expanded="true" signature="156:26405" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="225:391" ph="/* public const int BOARD_SIZE = 21; ... */" />
+                <marker date="1543895618645" expanded="true" signature="954:1168" ph="/* public Text[] scoreObj; //取石数を表示するテキストオブジェクト ... */" />
+                <marker date="1543895618645" expanded="true" signature="1305:1601" ph="/* private int bestPrisonerCount; //1つ前に探索したときの取石数 ... */" />
+                <marker date="1543895618645" expanded="true" signature="1742:2067" ph="/* private int playerScore; //プレイヤーの取石数 ... */" />
+                <marker date="1543895618645" expanded="true" signature="2180:6518" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="2195:2352" ph="/* playerScore = 0; ... */" />
+                <marker date="1543895618645" expanded="true" signature="2587:2682" ph="/* 碁石のプレハブを生成済みかどうかの判定フラグを取得 ... */" />
+                <marker date="1543895618645" expanded="true" signature="2722:2885" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="2745:2799" ph="/* 先攻の決定 ... */" />
+                <marker date="1543895618645" expanded="true" signature="2956:5181" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="3019:5171" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="3133:3216" ph="/* Debug.Log(&quot;Index: &quot; + index + &quot;  XY: &quot; + x + &quot;-&quot; + y); ... */" />
+                <marker date="1543895618645" expanded="true" signature="3326:5157" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="3867:4181" ph="/* どちらかがPlayerの場合、ボタンを有効化する ... */" />
+                <marker date="1543895618645" expanded="true" signature="4321:4445" ph="/* 着手ボタンを有効化 ... */" />
+                <marker date="1543895618645" expanded="true" signature="4527:5053" ph="/* } ... */" />
+                <marker date="1543895618645" expanded="true" signature="5243:5392" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="5438:5587" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="5628:6275" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="5639:6066" ph="/* scoreObj[0].text = &quot;0 points&quot;; ... */" />
+                <marker date="1543895618645" expanded="true" signature="6285:6512" ph="/* inAction = false; ... */" />
+                <marker date="1543895618645" expanded="true" signature="6618:18369" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="6768:6855" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="6891:7464" ph="/* Debug.Log(&quot;agentID -&gt; &quot; + agentId); ... */" />
+                <marker date="1543895618645" expanded="true" signature="7492:7589" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="7602:16501" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="7795:8138" ph="/* Debug.LogWarning((GetTurnCount() + 1) + &quot;手目&quot; + &quot;  Action: &quot; + action + &quot;  Index: &quot; + x + &quot;-&quot; + y); ... */" />
+                <marker date="1543895618645" expanded="true" signature="8201:8337" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="8351:8391" ph="/* Debug.Log(&quot;2&quot;); ... */" />
+                <marker date="1543895618645" expanded="true" signature="8460:8515" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="8532:8587" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="8671:13701" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="8970:13175" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="9009:10036" ph="/* Debug.Log(&quot;4  &quot; + isPlayer); ... */" />
+                <marker date="1543895618645" expanded="true" signature="10276:12194" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="10436:11490" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="10675:11464" ph="/* 既にMoveListに要素が追加されてるから、黒が白石を取った場合にGetTurn()が1になる ... */" />
+                <marker date="1543895618645" expanded="true" signature="11616:12172" ph="/* int prevIndex = moveList[mlCount].putIndex; ... */" />
+                <marker date="1543895618645" expanded="true" signature="12345:13157" ph="/* SetLastMove(bestAction); ... */" />
+                <marker date="1543895618645" expanded="true" signature="13196:13687" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="13443:13669" ph="/* this.agent[agentId].RequestDecision(); ... */" />
+                <marker date="1543895618645" expanded="true" signature="13740:16491" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="13784:13940" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="14021:15217" ph="/* this.agent[agentId].AddReward(-0.1f); ... */" />
+                <marker date="1543895618645" expanded="true" signature="15313:16477" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="15392:16418" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="15489:16351" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="15671:15962" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="15995:16171" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="16201:16325" ph="/* Debug.LogWarning(&quot;LegalIndex: &quot; + index); ... */" />
+                <marker date="1543895618645" expanded="true" signature="16510:16880" ph="/* デバッグ用 ... */" />
+                <marker date="1543895618645" expanded="true" signature="16939:18254" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="17487:18244" ph="/* Debug.LogError(&quot;SGFで保存します！&quot;); ... */" />
+                <marker date="1543895618645" expanded="true" signature="18267:18363" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="18412:21309" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="18914:21279" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="19007:21081" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="19211:19602" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="19675:20066" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="20143:20334" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="20201:20316" ph="/* this.agent[black].AddReward(-0.1f); ... */" />
+                <marker date="1543895618645" expanded="true" signature="20355:20544" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="20411:20526" ph="/* this.agent[black].AddReward(-0.1f); ... */" />
+                <marker date="1543895618645" expanded="true" signature="20739:20866" ph="/* Debug.LogError(&quot;SGFで保存しました！&quot;); ... */" />
+                <marker date="1543895618645" expanded="true" signature="21098:21269" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="21371:21490" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="21549:22798" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="21648:22695" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="21888:22685" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="22340:22671" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="22455:22653" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="22708:22765" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="22846:23398" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="22969:23067" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="23100:23231" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="23233:23392" ph="/* if (isFinish) { ... */" />
+                <marker date="1543895618645" expanded="true" signature="23429:24162" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="23559:23722" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="23620:23712" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="23782:23935" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="23977:24130" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="24206:24241" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="24286:24329" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="24368:24588" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="24594:24711" ph="/* 先攻プレイヤーのagentIdを取得 ... */" />
+                <marker date="1543895618645" expanded="true" signature="24760:24933" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="24836:24927" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="24977:25564" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="24992:25447" ph="/* return prisonerCountB - prisonerCountW; ... */" />
+                <marker date="1543895618645" expanded="true" signature="25566:25819" ph="/* private void SetLastMove(int action) ... */" />
+                <marker date="1543895618645" expanded="true" signature="25864:25913" ph="{...}" />
+                <marker date="1543895618645" expanded="true" signature="26001:26403" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/GoUtil.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7803">
+              <caret line="293" column="9" selection-start-line="293" selection-start-column="9" selection-end-line="293" selection-end-column="9" />
+              <folding>
+                <marker date="1543832771750" expanded="false" signature="6:101" ph="..." />
+                <marker date="1543832771750" expanded="true" signature="365:1892" ph="/* public static string SaveGamestateToSGF(List&lt;Move&gt; moveList, int yokoSize, int tateSize, double komi=7, string ... */" />
+                <marker date="1543832771750" expanded="true" signature="2100:3996" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="2115:2415" ph="/* if (moveList.Count &lt; GoArea.MAX_MOVE_COUNT) return false; ... */" />
+                <marker date="1543832771750" expanded="true" signature="2564:2633" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="2646:2732" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="3042:3840" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="3172:3272" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="3334:3434" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="3506:3571" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="3588:3830" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="4114:5314" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="4199:4286" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="4648:4764" ph="/* string dirPath = Path.Combine(Application.dataPath, &quot;SGF&quot;); ... */" />
+                <marker date="1543832771750" expanded="true" signature="5367:6104" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="5452:5539" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="6157:7129" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="6316:6599" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="6385:6436" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="6453:6530" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="6649:7097" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="6814:6865" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="6882:7028" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="7179:7251" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="7339:7683" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="7418:7605" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="7468:7595" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="7741:9046" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="7900:8162" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="8056:8152" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="8172:8229" ph="/* Debug.Log(result); ... */" />
+                <marker date="1543832771750" expanded="true" signature="8378:8497" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="8510:8953" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="8561:8624" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="8672:8734" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="8780:8843" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="8860:8943" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="9119:9764" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="9202:9467" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="9361:9457" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="9509:9553" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="9599:9643" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="9656:9758" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="9831:11110" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="9871:9925" ph="/* float diff = 0.0f; ... */" />
+                <marker date="1543832771750" expanded="true" signature="9969:10234" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="10128:10224" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="10244:10285" ph="/* if (resultStr.Length &gt; 1) ... */" />
+                <marker date="1543832771750" expanded="true" signature="10369:10760" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="10437:10584" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="10601:10750" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="10773:10897" ph="{...}" />
+                <marker date="1543832771750" expanded="true" signature="10906:11039" ph="/* } ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/StoneManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2430">
+              <caret line="94" column="9" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
+              <folding>
+                <marker date="1543895525701" expanded="false" signature="6:113" ph="..." />
+                <marker date="1543895525701" expanded="true" signature="156:25340" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="181:286" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="331:440" ph="/* public static readonly int BOARD_SIZE_YOKO = 21; ... */" />
+                <marker date="1543895525701" expanded="true" signature="1070:4323" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="1256:1458" ph="/* Debug.Log(&quot;取石リスト要素数: &quot; + prisonerList.Count); ... */" />
+                <marker date="1543895525701" expanded="true" signature="1497:1757" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="1670:1747" ph="/* confirmButton.gameObject.SetActive(true); ... */" />
+                <marker date="1543895525701" expanded="true" signature="1801:2271" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="1824:1952" ph="/* if (CheckLegal((int)State.BLACK, x, y, board, false)) ... */" />
+                <marker date="1543895525701" expanded="true" signature="2105:2261" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+                <marker date="1543895525701" expanded="true" signature="2315:2785" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="2338:2466" ph="/* if (CheckLegal((int)State.WHITE, x, y, board, false)) ... */" />
+                <marker date="1543895525701" expanded="true" signature="2619:2775" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+                <marker date="1543895525701" expanded="true" signature="2795:3139" ph="/* Debug.Log(&quot;board[x, y]: &quot; + board[x, y]); ... */" />
+                <marker date="1543895525701" expanded="true" signature="3191:3266" ph="/* Debug.Log(&quot;取石リスト要素数: &quot; + prisonerList.Count); ... */" />
+                <marker date="1543895525701" expanded="true" signature="3284:3450" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="3463:3509" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="3613:4294" ph="/* デバッグ用 ... */" />
+                <marker date="1543895525701" expanded="true" signature="4402:5548" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="4564:4824" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="4737:4814" ph="/* confirmButton.gameObject.SetActive(true); ... */" />
+                <marker date="1543895525701" expanded="true" signature="4868:5183" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="5051:5173" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+                <marker date="1543895525701" expanded="true" signature="5227:5542" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="5410:5532" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+                <marker date="1543895525701" expanded="true" signature="5648:6821" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="5810:6071" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="5984:6061" ph="/* confirmButton.gameObject.SetActive(true); ... */" />
+                <marker date="1543895525701" expanded="true" signature="6115:6431" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="6299:6421" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+                <marker date="1543895525701" expanded="true" signature="6475:6791" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="6659:6781" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+                <marker date="1543895525701" expanded="true" signature="6914:8478" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="6929:7000" ph="/* Debug.Log(&quot;prisoner: &quot; + prisoner); ... */" />
+                <marker date="1543895525701" expanded="true" signature="7161:7296" ph="/* Debug.LogWarning(&quot;取石座標 -&gt; &quot; + indexArray[0] + &quot;-&quot; + indexArray[1] + &quot;  board[priX, priY] -&gt; &quot; + board[priX, pr ... */" />
+                <marker date="1543895525701" expanded="true" signature="7334:7579" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="7492:7569" ph="/* confirmButton.gameObject.SetActive(true); ... */" />
+                <marker date="1543895525701" expanded="true" signature="7623:7844" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="7888:8109" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="8119:8449" ph="/* デバッグ用 ... */" />
+                <marker date="1543895525701" expanded="true" signature="8578:9113" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="8740:8825" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="8869:8954" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="8998:9083" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="9210:9727" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="9398:9468" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="9512:9583" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="9627:9698" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="9764:9806" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="9839:9879" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="9992:10237" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="10312:11256" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="10327:10377" ph="/* 引数の碁盤配列をこのクラスの碁盤配列にコピー ... */" />
+                <marker date="1543895525701" expanded="true" signature="10516:11218" ph="/* デバッグ用 ... */" />
+                <marker date="1543895525701" expanded="true" signature="11301:11415" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="11446:12108" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="11576:11725" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="11637:11715" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="11785:11910" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="11951:12076" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="12180:13589" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="12195:12309" ph="/* Debug.Log(&quot;XY -&gt; &quot; + x + &quot;  &quot; + y); ... */" />
+                <marker date="1543895525701" expanded="true" signature="12402:12644" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="12425:12608" ph="/* Debug.LogError(&quot;空点じゃないよ！&quot;); ... */" />
+                <marker date="1543895525701" expanded="true" signature="12717:13190" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="12847:13180" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="12967:13166" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="13006:13114" ph="/* .LogError(&quot;コウだよ！&quot;); ... */" />
+                <marker date="1543895525701" expanded="true" signature="13255:13420" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="13278:13384" ph="/* Debug.LogError(&quot;自殺手だよ！&quot;); ... */" />
+                <marker date="1543895525701" expanded="true" signature="13644:16809" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="13947:16644" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="14103:14680" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="14194:14666" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="14478:14648" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="14703:15280" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="14794:15266" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="15078:15248" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="15318:15895" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="15409:15881" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="15693:15863" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="15933:16510" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="16024:16496" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="16308:16478" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="16657:16803" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="16844:17063" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="16916:17057" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="16977:17047" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="17124:19532" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="17158:17330" ph="/* Debug.LogWarning(&quot;X-Y -&gt; &quot; + x + &quot;-&quot; + y); ... */" />
+                <marker date="1543895525701" expanded="true" signature="17401:17491" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="17627:17845" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="17650:17809" ph="/* Debug.LogWarning(&quot;空点2！&quot;); ... */" />
+                <marker date="1543895525701" expanded="true" signature="17912:19314" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="17980:18260" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="18087:18157" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="18318:18598" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="18425:18495" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="18671:18951" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="18778:18848" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="19024:19304" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="19131:19201" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="19327:19479" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="19585:20338" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="19693:19854" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="19716:19822" ph="/* Debug.Log(&quot;置いた石と同じ色！&quot;); ... */" />
+                <marker date="1543895525701" expanded="true" signature="19922:20077" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="19945:20045" ph="/* Debug.Log(&quot;空点！&quot;); ... */" />
+                <marker date="1543895525701" expanded="true" signature="20204:20313" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="20407:21981" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="20562:21926" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="20699:20854" ph="/* 取れる石のindexのList ... */" />
+                <marker date="1543895525701" expanded="true" signature="21113:21271" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="21318:21476" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="21538:21696" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="21758:21916" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="22051:25056" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="22066:22116" ph="/* 引数の碁盤配列をこのクラスの碁盤配列にコピー ... */" />
+                <marker date="1543895525701" expanded="true" signature="22488:22960" ph="/* xとyを入れ替えたけど、うまく動かなかったら元に戻す ... */" />
+                <marker date="1543895525701" expanded="true" signature="23119:23235" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="23248:23329" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="23508:23582" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="23601:23675" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="23709:23783" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="23817:23891" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="24070:24843" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="24258:24374" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="24411:24527" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="24564:24680" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="24717:24833" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="24856:24902" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="24912:25021" ph="/* Debug.LogWarning(&quot;取石総数: &quot; + prisonerAll); ... */" />
+                <marker date="1543895525701" expanded="true" signature="25096:25338" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="25141:25198" ph="{...}" />
+                <marker date="1543895525701" expanded="true" signature="25242:25299" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>AreaReset</find>
+      <find>GoEstimator</find>
+      <find>isfinish</find>
+      <find>reviewBoard</find>
+      <find>prev</find>
+      <find>initstone</find>
+      <find>winCountObj</find>
+      <find>checkBoard</find>
+      <find>3600</find>
+      <find>isPlayer</find>
+      <find>CheckSuicide</find>
+      <find>DoRemoveStone</find>
+      <find>LogError</find>
+      <find>diff</find>
+      <find>AgentAction</find>
+      <find>isFinish</find>
+      <find>points</find>
+      <find>playerprefs.set</find>
+      <find>confirm</find>
+      <find>confirmButton.gameObject.SetActive(true);</find>
+      <find>PlayerPrefs.Set</find>
+      <find>isac</find>
+      <find>inAction = false</find>
+      <find>inAction = false;</find>
+      <find>agent[agentId].isAction = true;</find>
+      <find>isaction</find>
+      <find>inac</find>
+      <find>isAction</find>
+      <find>AddReward</find>
+      <find>Debug</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>//visitCount</replace>
+      <replace>BOARD_SIZE</replace>
+      <replace>agent[agentId].isAction = true;</replace>
+    </replaceStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/47/59f4694a/Camera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoArea_19_10.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ML-Agents/Examples/Pyramids/Scripts/PyramidArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ML-Agents/Examples/Pyramids/Scripts/PyramidAgent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/64/899c4361/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ML-Agents/Scripts/Batcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A3E24F8A-C8B9-4D35-849B-5D670E676C59/d6/978156d9/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F826C258-4FC9-4EC1-9A48-A6576640BDC5/87/75636b19/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ML-Agents/Scripts/Agent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ML-Agents/Scripts/InferenceBrain/TFSharpInferenceEngine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoEstimator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/fe/a388dea5/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/ff/b71683bd/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/30/bda39ce7/Input.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoAgent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Move.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/a0/725acc4f/Display.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/26/ca278dfd/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PreLoad.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoEstimator_old.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/3f/c28b9b1c/Rect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ML-Agents/Scripts/Brain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/4f/5536963a/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StoneManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F826C258-4FC9-4EC1-9A48-A6576640BDC5/70/5175d960/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoAcademy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/7a/43f4758f/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F826C258-4FC9-4EC1-9A48-A6576640BDC5/a3/703d8c47/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/40/a3b27bb9/Ray.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ML-Agents/Scripts/Academy.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/GoArea_19-10.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoEstimator2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Move.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoArea_19_10.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoEstimator.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoAcademy.cs" />
+        <option value="$PROJECT_DIR$/Assets/PreLoad.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoUtil.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoAgent.cs" />
+        <option value="$PROJECT_DIR$/Assets/StoneManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoArea.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2054" />
+    <option name="y" value="33" />
+    <option name="width" value="1640" />
+    <option name="height" value="999" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="9224">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="9224" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6db4f2d7-0caf-439b-a17a-6da6ef1b8bb0" name="Default Changelist" comment="" />
+      <created>1543554077402</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543554077402</updated>
+      <workItem from="1543554080694" duration="4153000" />
+      <workItem from="1543638074696" duration="576000" />
+      <workItem from="1543638678464" duration="24200000" />
+      <workItem from="1543664314669" duration="1484000" />
+      <workItem from="1543742017817" duration="17512000" />
+      <workItem from="1543810273277" duration="19723000" />
+      <workItem from="1543895241181" duration="506000" />
+      <workItem from="1545119439697" duration="158000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="68312000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2054" y="33" width="1640" height="999" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1943038" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32947975" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="Errors In Solution" order="3" visible="true" weight="0.13354431" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>803</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="777">
+            <startOffsets>
+              <option value="23531" />
+            </startOffsets>
+            <endOffsets>
+              <option value="23572" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>807</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="781">
+            <startOffsets>
+              <option value="23624" />
+            </startOffsets>
+            <endOffsets>
+              <option value="23665" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>811</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="785">
+            <startOffsets>
+              <option value="23732" />
+            </startOffsets>
+            <endOffsets>
+              <option value="23773" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>815</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="789">
+            <startOffsets>
+              <option value="23840" />
+            </startOffsets>
+            <endOffsets>
+              <option value="23881" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>819</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="793">
+            <startOffsets>
+              <option value="23926" />
+            </startOffsets>
+            <endOffsets>
+              <option value="23986" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>822</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="796">
+            <startOffsets>
+              <option value="24041" />
+            </startOffsets>
+            <endOffsets>
+              <option value="24070" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>827</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="801">
+            <startOffsets>
+              <option value="24164" />
+            </startOffsets>
+            <endOffsets>
+              <option value="24199" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>832</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="806">
+            <startOffsets>
+              <option value="24321" />
+            </startOffsets>
+            <endOffsets>
+              <option value="24334" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>833</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="807">
+            <startOffsets>
+              <option value="24351" />
+            </startOffsets>
+            <endOffsets>
+              <option value="24360" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>838</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="812">
+            <startOffsets>
+              <option value="24474" />
+            </startOffsets>
+            <endOffsets>
+              <option value="24483" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>839</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="813">
+            <startOffsets>
+              <option value="24500" />
+            </startOffsets>
+            <endOffsets>
+              <option value="24513" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>845</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="819">
+            <startOffsets>
+              <option value="24657" />
+            </startOffsets>
+            <endOffsets>
+              <option value="24666" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>844</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="818">
+            <startOffsets>
+              <option value="24627" />
+            </startOffsets>
+            <endOffsets>
+              <option value="24640" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>851</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="825">
+            <startOffsets>
+              <option value="24806" />
+            </startOffsets>
+            <endOffsets>
+              <option value="24819" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>850</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="824">
+            <startOffsets>
+              <option value="24780" />
+            </startOffsets>
+            <endOffsets>
+              <option value="24789" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>856</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="830">
+            <startOffsets>
+              <option value="24879" />
+            </startOffsets>
+            <endOffsets>
+              <option value="24892" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/StoneManager.cs</url>
+          <line>862</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/StoneManager.cs" initialLine="836">
+            <startOffsets>
+              <option value="25031" />
+            </startOffsets>
+            <endOffsets>
+              <option value="25050" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/GoArea.cs</url>
+          <line>296</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/GoArea.cs" initialLine="272">
+            <startOffsets>
+              <option value="10198" />
+            </startOffsets>
+            <endOffsets>
+              <option value="10276" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/GoArea.cs</url>
+          <line>302</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/GoArea.cs" initialLine="278">
+            <startOffsets>
+              <option value="10555" />
+            </startOffsets>
+            <endOffsets>
+              <option value="10645" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/GoAgent.cs</url>
+          <line>318</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/GoAgent.cs" initialLine="304">
+            <startOffsets>
+              <option value="8511" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8529" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/GoArea.cs</url>
+          <line>241</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/GoArea.cs" initialLine="222">
+            <startOffsets>
+              <option value="8151" />
+              <option value="8316" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8201" />
+              <option value="8323" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/GoArea.cs</url>
+          <line>261</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/GoArea.cs" initialLine="237">
+            <startOffsets>
+              <option value="8601" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8671" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/GoArea.cs</url>
+          <line>265</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/GoArea.cs" initialLine="241">
+            <startOffsets>
+              <option value="8809" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8970" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/ML-Agents/Scripts/Agent.cs</url>
+          <line>1013</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/ML-Agents/Scripts/Agent.cs" initialLine="1013">
+            <startOffsets>
+              <option value="38242" />
+            </startOffsets>
+            <endOffsets>
+              <option value="38296" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/GoAgent.cs</url>
+          <line>323</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/GoAgent.cs" initialLine="309">
+            <startOffsets>
+              <option value="8607" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8626" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/GoAgent.cs</url>
+          <line>325</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/GoAgent.cs" initialLine="311">
+            <startOffsets>
+              <option value="8649" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8667" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/RandomDecision.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/ML-Agents/Scripts/Brain.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1155">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GoArea_19-10.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/GoEstimator_old.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ML-Agents/Scripts/Batcher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Move.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GoArea_19_10.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="213" column="76" selection-start-line="213" selection-start-column="76" selection-end-line="213" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F826C258-4FC9-4EC1-9A48-A6576640BDC5/a3/703d8c47/List`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F826C258-4FC9-4EC1-9A48-A6576640BDC5/70/5175d960/String.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="1933" column="6" selection-start-line="1933" selection-start-column="6" selection-end-line="1933" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ML-Agents/Examples/Pyramids/Scripts/PyramidAgent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2673">
+          <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ML-Agents/Examples/Pyramids/Scripts/PyramidArea.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A3E24F8A-C8B9-4D35-849B-5D670E676C59/d6/978156d9/NativeInputSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/30/bda39ce7/Input.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="225" column="8" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/a0/725acc4f/Display.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="196" column="6" selection-start-line="196" selection-start-column="6" selection-end-line="196" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/26/ca278dfd/Vector3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="638" column="6" selection-start-line="638" selection-start-column="6" selection-end-line="638" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/3f/c28b9b1c/Rect.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="306" column="8" selection-start-line="306" selection-start-column="8" selection-end-line="306" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/4f/5536963a/Component.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F826C258-4FC9-4EC1-9A48-A6576640BDC5/87/75636b19/IntPtr.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="112" column="6" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/fe/a388dea5/Object.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/7a/43f4758f/Vector2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="423" column="6" selection-start-line="423" selection-start-column="6" selection-end-line="423" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/47/59f4694a/Camera.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="720" column="6" selection-start-line="720" selection-start-column="6" selection-end-line="720" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/40/a3b27bb9/Ray.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/ff/b71683bd/Mathf.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="602" column="6" selection-start-line="602" selection-start-column="6" selection-end-line="602" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA9ED43-4CED-412B-9DFD-F42AE1F4C38F/64/899c4361/SendMouseEvents.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="107" column="14" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ML-Agents/Scripts/Agent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="1024" column="8" selection-start-line="1024" selection-start-column="8" selection-end-line="1024" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ML-Agents/Scripts/Academy.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="611" column="8" selection-start-line="611" selection-start-column="8" selection-end-line="611" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/PreLoad.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GoEstimator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GoAcademy.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GoAgent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <marker date="1543895454694" expanded="false" signature="6:124" ph="..." />
+            <marker date="1543895454694" expanded="true" signature="540:1607" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="659:705" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="809:855" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="994:1455" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="1056:1286" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="1142:1220" ph="/* isAction = true; ... */" />
+            <marker date="1543895454694" expanded="true" signature="1303:1445" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="1456:1601" ph="/* else ... */" />
+            <marker date="1543895454694" expanded="true" signature="1670:5827" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="1730:2340" ph="/* ターン（0：自分以外、1：自分） ... */" />
+            <marker date="1543895454694" expanded="true" signature="2480:2923" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="2515:2597" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="2778:2837" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="2854:2913" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="3048:3483" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="3083:3165" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="3338:3397" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="3414:3473" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="3524:5821" ph="/* k手前(k = 1〜7)の黒石の位置（-1:なし、0:相手の石、1:自分の石、2:パス） ... */" />
+            <marker date="1543895454694" expanded="true" signature="5829:7274" ph="/* for (int i = 1; i &lt; GoArea.BOARD_SIZE - 1; i++) ... */" />
+            <marker date="1543895454694" expanded="true" signature="7281:7595" ph="/* for (int i = 0; i &lt; this.area.GetMoveList().Count; i++) ... */" />
+            <marker date="1543895454694" expanded="true" signature="7673:8060" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="7848:8054" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="7956:8044" ph="/* Player用 ... */" />
+            <marker date="1543895454694" expanded="true" signature="8105:8180" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="8182:8404" ph="/* private float[] InitBoard9() ... */" />
+            <marker date="1543895454694" expanded="true" signature="8436:8751" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="8451:8598" ph="/* Player用 ... */" />
+            <marker date="1543895454694" expanded="true" signature="8626:8745" ph="{...}" />
+            <marker date="1543895454694" expanded="true" signature="8680:8735" ph="/* isAction = false; ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GoUtil.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7803">
+          <caret line="293" column="9" selection-start-line="293" selection-start-column="9" selection-end-line="293" selection-end-column="9" />
+          <folding>
+            <marker date="1543832771750" expanded="false" signature="6:101" ph="..." />
+            <marker date="1543832771750" expanded="true" signature="365:1892" ph="/* public static string SaveGamestateToSGF(List&lt;Move&gt; moveList, int yokoSize, int tateSize, double komi=7, string ... */" />
+            <marker date="1543832771750" expanded="true" signature="2100:3996" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="2115:2415" ph="/* if (moveList.Count &lt; GoArea.MAX_MOVE_COUNT) return false; ... */" />
+            <marker date="1543832771750" expanded="true" signature="2564:2633" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="2646:2732" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="3042:3840" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="3172:3272" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="3334:3434" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="3506:3571" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="3588:3830" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="4114:5314" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="4199:4286" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="4648:4764" ph="/* string dirPath = Path.Combine(Application.dataPath, &quot;SGF&quot;); ... */" />
+            <marker date="1543832771750" expanded="true" signature="5367:6104" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="5452:5539" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="6157:7129" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="6316:6599" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="6385:6436" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="6453:6530" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="6649:7097" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="6814:6865" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="6882:7028" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="7179:7251" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="7339:7683" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="7418:7605" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="7468:7595" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="7741:9046" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="7900:8162" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="8056:8152" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="8172:8229" ph="/* Debug.Log(result); ... */" />
+            <marker date="1543832771750" expanded="true" signature="8378:8497" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="8510:8953" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="8561:8624" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="8672:8734" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="8780:8843" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="8860:8943" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="9119:9764" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="9202:9467" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="9361:9457" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="9509:9553" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="9599:9643" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="9656:9758" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="9831:11110" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="9871:9925" ph="/* float diff = 0.0f; ... */" />
+            <marker date="1543832771750" expanded="true" signature="9969:10234" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="10128:10224" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="10244:10285" ph="/* if (resultStr.Length &gt; 1) ... */" />
+            <marker date="1543832771750" expanded="true" signature="10369:10760" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="10437:10584" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="10601:10750" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="10773:10897" ph="{...}" />
+            <marker date="1543832771750" expanded="true" signature="10906:11039" ph="/* } ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/StoneManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2430">
+          <caret line="94" column="9" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
+          <folding>
+            <marker date="1543895525701" expanded="false" signature="6:113" ph="..." />
+            <marker date="1543895525701" expanded="true" signature="156:25340" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="181:286" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="331:440" ph="/* public static readonly int BOARD_SIZE_YOKO = 21; ... */" />
+            <marker date="1543895525701" expanded="true" signature="1070:4323" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="1256:1458" ph="/* Debug.Log(&quot;取石リスト要素数: &quot; + prisonerList.Count); ... */" />
+            <marker date="1543895525701" expanded="true" signature="1497:1757" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="1670:1747" ph="/* confirmButton.gameObject.SetActive(true); ... */" />
+            <marker date="1543895525701" expanded="true" signature="1801:2271" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="1824:1952" ph="/* if (CheckLegal((int)State.BLACK, x, y, board, false)) ... */" />
+            <marker date="1543895525701" expanded="true" signature="2105:2261" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+            <marker date="1543895525701" expanded="true" signature="2315:2785" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="2338:2466" ph="/* if (CheckLegal((int)State.WHITE, x, y, board, false)) ... */" />
+            <marker date="1543895525701" expanded="true" signature="2619:2775" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+            <marker date="1543895525701" expanded="true" signature="2795:3139" ph="/* Debug.Log(&quot;board[x, y]: &quot; + board[x, y]); ... */" />
+            <marker date="1543895525701" expanded="true" signature="3191:3266" ph="/* Debug.Log(&quot;取石リスト要素数: &quot; + prisonerList.Count); ... */" />
+            <marker date="1543895525701" expanded="true" signature="3284:3450" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="3463:3509" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="3613:4294" ph="/* デバッグ用 ... */" />
+            <marker date="1543895525701" expanded="true" signature="4402:5548" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="4564:4824" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="4737:4814" ph="/* confirmButton.gameObject.SetActive(true); ... */" />
+            <marker date="1543895525701" expanded="true" signature="4868:5183" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="5051:5173" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+            <marker date="1543895525701" expanded="true" signature="5227:5542" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="5410:5532" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+            <marker date="1543895525701" expanded="true" signature="5648:6821" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="5810:6071" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="5984:6061" ph="/* confirmButton.gameObject.SetActive(true); ... */" />
+            <marker date="1543895525701" expanded="true" signature="6115:6431" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="6299:6421" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+            <marker date="1543895525701" expanded="true" signature="6475:6791" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="6659:6781" ph="/* confirmButton.gameObject.SetActive(false); ... */" />
+            <marker date="1543895525701" expanded="true" signature="6914:8478" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="6929:7000" ph="/* Debug.Log(&quot;prisoner: &quot; + prisoner); ... */" />
+            <marker date="1543895525701" expanded="true" signature="7161:7296" ph="/* Debug.LogWarning(&quot;取石座標 -&gt; &quot; + indexArray[0] + &quot;-&quot; + indexArray[1] + &quot;  board[priX, priY] -&gt; &quot; + board[priX, pr ... */" />
+            <marker date="1543895525701" expanded="true" signature="7334:7579" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="7492:7569" ph="/* confirmButton.gameObject.SetActive(true); ... */" />
+            <marker date="1543895525701" expanded="true" signature="7623:7844" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="7888:8109" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="8119:8449" ph="/* デバッグ用 ... */" />
+            <marker date="1543895525701" expanded="true" signature="8578:9113" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="8740:8825" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="8869:8954" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="8998:9083" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="9210:9727" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="9398:9468" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="9512:9583" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="9627:9698" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="9764:9806" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="9839:9879" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="9992:10237" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="10312:11256" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="10327:10377" ph="/* 引数の碁盤配列をこのクラスの碁盤配列にコピー ... */" />
+            <marker date="1543895525701" expanded="true" signature="10516:11218" ph="/* デバッグ用 ... */" />
+            <marker date="1543895525701" expanded="true" signature="11301:11415" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="11446:12108" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="11576:11725" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="11637:11715" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="11785:11910" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="11951:12076" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="12180:13589" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="12195:12309" ph="/* Debug.Log(&quot;XY -&gt; &quot; + x + &quot;  &quot; + y); ... */" />
+            <marker date="1543895525701" expanded="true" signature="12402:12644" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="12425:12608" ph="/* Debug.LogError(&quot;空点じゃないよ！&quot;); ... */" />
+            <marker date="1543895525701" expanded="true" signature="12717:13190" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="12847:13180" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="12967:13166" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="13006:13114" ph="/* .LogError(&quot;コウだよ！&quot;); ... */" />
+            <marker date="1543895525701" expanded="true" signature="13255:13420" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="13278:13384" ph="/* Debug.LogError(&quot;自殺手だよ！&quot;); ... */" />
+            <marker date="1543895525701" expanded="true" signature="13644:16809" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="13947:16644" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="14103:14680" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="14194:14666" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="14478:14648" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="14703:15280" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="14794:15266" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="15078:15248" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="15318:15895" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="15409:15881" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="15693:15863" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="15933:16510" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="16024:16496" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="16308:16478" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="16657:16803" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="16844:17063" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="16916:17057" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="16977:17047" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="17124:19532" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="17158:17330" ph="/* Debug.LogWarning(&quot;X-Y -&gt; &quot; + x + &quot;-&quot; + y); ... */" />
+            <marker date="1543895525701" expanded="true" signature="17401:17491" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="17627:17845" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="17650:17809" ph="/* Debug.LogWarning(&quot;空点2！&quot;); ... */" />
+            <marker date="1543895525701" expanded="true" signature="17912:19314" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="17980:18260" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="18087:18157" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="18318:18598" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="18425:18495" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="18671:18951" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="18778:18848" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="19024:19304" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="19131:19201" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="19327:19479" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="19585:20338" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="19693:19854" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="19716:19822" ph="/* Debug.Log(&quot;置いた石と同じ色！&quot;); ... */" />
+            <marker date="1543895525701" expanded="true" signature="19922:20077" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="19945:20045" ph="/* Debug.Log(&quot;空点！&quot;); ... */" />
+            <marker date="1543895525701" expanded="true" signature="20204:20313" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="20407:21981" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="20562:21926" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="20699:20854" ph="/* 取れる石のindexのList ... */" />
+            <marker date="1543895525701" expanded="true" signature="21113:21271" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="21318:21476" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="21538:21696" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="21758:21916" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="22051:25056" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="22066:22116" ph="/* 引数の碁盤配列をこのクラスの碁盤配列にコピー ... */" />
+            <marker date="1543895525701" expanded="true" signature="22488:22960" ph="/* xとyを入れ替えたけど、うまく動かなかったら元に戻す ... */" />
+            <marker date="1543895525701" expanded="true" signature="23119:23235" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="23248:23329" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="23508:23582" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="23601:23675" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="23709:23783" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="23817:23891" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="24070:24843" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="24258:24374" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="24411:24527" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="24564:24680" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="24717:24833" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="24856:24902" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="24912:25021" ph="/* Debug.LogWarning(&quot;取石総数: &quot; + prisonerAll); ... */" />
+            <marker date="1543895525701" expanded="true" signature="25096:25338" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="25141:25198" ph="{...}" />
+            <marker date="1543895525701" expanded="true" signature="25242:25299" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ML-Agents/Scripts/InferenceBrain/TFSharpInferenceEngine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="158" column="34" lean-forward="true" selection-start-line="158" selection-start-column="34" selection-end-line="158" selection-end-column="34" />
+          <folding>
+            <marker date="1544830939000" expanded="false" signature="28:192" ph="..." />
+            <marker date="1544830939000" expanded="true" signature="227:7375" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="234:408" ph="/// TFSharpInferenceEngine - Inference engine utilizing the TensorFlow Sharp package to run inference ... " />
+            <marker date="1544830939000" expanded="true" signature="448:7373" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="572:1095" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="1191:3329" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="1552:2168" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="1611:2024" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="1739:1859" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="1884:2006" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="2045:2154" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="2536:2645" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="2764:3222" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="2828:3077" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="3098:3208" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="3775:6994" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="4048:4250" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="4267:5567" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="4320:4453" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="4474:5553" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="4777:4928" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="4953:5535" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="5101:5513" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="5174:5342" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="5375:5487" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="5700:6117" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="5870:6103" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="6232:6737" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="6809:6961" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="7046:7367" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="7166:7329" ph="{...}" />
+            <marker date="1544830939000" expanded="true" signature="7228:7315" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GoArea.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="568" column="17" selection-start-line="568" selection-start-column="17" selection-end-line="568" selection-end-column="17" />
+          <folding>
+            <marker date="1543895618645" expanded="false" signature="6:113" ph="..." />
+            <marker date="1543895618645" expanded="true" signature="156:26405" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="225:391" ph="/* public const int BOARD_SIZE = 21; ... */" />
+            <marker date="1543895618645" expanded="true" signature="954:1168" ph="/* public Text[] scoreObj; //取石数を表示するテキストオブジェクト ... */" />
+            <marker date="1543895618645" expanded="true" signature="1305:1601" ph="/* private int bestPrisonerCount; //1つ前に探索したときの取石数 ... */" />
+            <marker date="1543895618645" expanded="true" signature="1742:2067" ph="/* private int playerScore; //プレイヤーの取石数 ... */" />
+            <marker date="1543895618645" expanded="true" signature="2180:6518" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="2195:2352" ph="/* playerScore = 0; ... */" />
+            <marker date="1543895618645" expanded="true" signature="2587:2682" ph="/* 碁石のプレハブを生成済みかどうかの判定フラグを取得 ... */" />
+            <marker date="1543895618645" expanded="true" signature="2722:2885" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="2745:2799" ph="/* 先攻の決定 ... */" />
+            <marker date="1543895618645" expanded="true" signature="2956:5181" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="3019:5171" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="3133:3216" ph="/* Debug.Log(&quot;Index: &quot; + index + &quot;  XY: &quot; + x + &quot;-&quot; + y); ... */" />
+            <marker date="1543895618645" expanded="true" signature="3326:5157" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="3867:4181" ph="/* どちらかがPlayerの場合、ボタンを有効化する ... */" />
+            <marker date="1543895618645" expanded="true" signature="4321:4445" ph="/* 着手ボタンを有効化 ... */" />
+            <marker date="1543895618645" expanded="true" signature="4527:5053" ph="/* } ... */" />
+            <marker date="1543895618645" expanded="true" signature="5243:5392" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="5438:5587" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="5628:6275" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="5639:6066" ph="/* scoreObj[0].text = &quot;0 points&quot;; ... */" />
+            <marker date="1543895618645" expanded="true" signature="6285:6512" ph="/* inAction = false; ... */" />
+            <marker date="1543895618645" expanded="true" signature="6618:18369" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="6768:6855" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="6891:7464" ph="/* Debug.Log(&quot;agentID -&gt; &quot; + agentId); ... */" />
+            <marker date="1543895618645" expanded="true" signature="7492:7589" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="7602:16501" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="7795:8138" ph="/* Debug.LogWarning((GetTurnCount() + 1) + &quot;手目&quot; + &quot;  Action: &quot; + action + &quot;  Index: &quot; + x + &quot;-&quot; + y); ... */" />
+            <marker date="1543895618645" expanded="true" signature="8201:8337" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="8351:8391" ph="/* Debug.Log(&quot;2&quot;); ... */" />
+            <marker date="1543895618645" expanded="true" signature="8460:8515" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="8532:8587" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="8671:13701" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="8970:13175" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="9009:10036" ph="/* Debug.Log(&quot;4  &quot; + isPlayer); ... */" />
+            <marker date="1543895618645" expanded="true" signature="10276:12194" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="10436:11490" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="10675:11464" ph="/* 既にMoveListに要素が追加されてるから、黒が白石を取った場合にGetTurn()が1になる ... */" />
+            <marker date="1543895618645" expanded="true" signature="11616:12172" ph="/* int prevIndex = moveList[mlCount].putIndex; ... */" />
+            <marker date="1543895618645" expanded="true" signature="12345:13157" ph="/* SetLastMove(bestAction); ... */" />
+            <marker date="1543895618645" expanded="true" signature="13196:13687" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="13443:13669" ph="/* this.agent[agentId].RequestDecision(); ... */" />
+            <marker date="1543895618645" expanded="true" signature="13740:16491" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="13784:13940" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="14021:15217" ph="/* this.agent[agentId].AddReward(-0.1f); ... */" />
+            <marker date="1543895618645" expanded="true" signature="15313:16477" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="15392:16418" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="15489:16351" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="15671:15962" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="15995:16171" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="16201:16325" ph="/* Debug.LogWarning(&quot;LegalIndex: &quot; + index); ... */" />
+            <marker date="1543895618645" expanded="true" signature="16510:16880" ph="/* デバッグ用 ... */" />
+            <marker date="1543895618645" expanded="true" signature="16939:18254" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="17487:18244" ph="/* Debug.LogError(&quot;SGFで保存します！&quot;); ... */" />
+            <marker date="1543895618645" expanded="true" signature="18267:18363" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="18412:21309" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="18914:21279" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="19007:21081" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="19211:19602" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="19675:20066" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="20143:20334" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="20201:20316" ph="/* this.agent[black].AddReward(-0.1f); ... */" />
+            <marker date="1543895618645" expanded="true" signature="20355:20544" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="20411:20526" ph="/* this.agent[black].AddReward(-0.1f); ... */" />
+            <marker date="1543895618645" expanded="true" signature="20739:20866" ph="/* Debug.LogError(&quot;SGFで保存しました！&quot;); ... */" />
+            <marker date="1543895618645" expanded="true" signature="21098:21269" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="21371:21490" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="21549:22798" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="21648:22695" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="21888:22685" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="22340:22671" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="22455:22653" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="22708:22765" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="22846:23398" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="22969:23067" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="23100:23231" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="23233:23392" ph="/* if (isFinish) { ... */" />
+            <marker date="1543895618645" expanded="true" signature="23429:24162" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="23559:23722" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="23620:23712" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="23782:23935" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="23977:24130" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="24206:24241" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="24286:24329" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="24368:24588" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="24594:24711" ph="/* 先攻プレイヤーのagentIdを取得 ... */" />
+            <marker date="1543895618645" expanded="true" signature="24760:24933" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="24836:24927" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="24977:25564" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="24992:25447" ph="/* return prisonerCountB - prisonerCountW; ... */" />
+            <marker date="1543895618645" expanded="true" signature="25566:25819" ph="/* private void SetLastMove(int action) ... */" />
+            <marker date="1543895618645" expanded="true" signature="25864:25913" ph="{...}" />
+            <marker date="1543895618645" expanded="true" signature="26001:26403" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
