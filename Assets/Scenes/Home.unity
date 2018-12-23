@@ -698,7 +698,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ae132bbdf023044ad854b2a434e1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sgfFile: {fileID: 4900000, guid: 9b678e50dc6eda243b491e7362b0488c, type: 3}
 --- !u!1 &1076274351
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,8 +892,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3f1498665fa246f41a62d2de5cdcae0e, type: 2}
     - {fileID: 11400000, guid: 0b65b7dcfa0a9c244bab2e15c6999ab4, type: 2}
     _brainsToControl:
-    - {fileID: 11400000, guid: 8bf35b20661f39c489c39d81da208436, type: 2}
     - {fileID: 11400000, guid: d7d81b93dd2f86a4cb64f948fd2b467a, type: 2}
+    - {fileID: 11400000, guid: 8bf35b20661f39c489c39d81da208436, type: 2}
   maxSteps: 0
   trainingConfiguration:
     width: 600

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Const;
 
 public class StoneManager : MonoBehaviour
 {
@@ -17,8 +16,6 @@ public class StoneManager : MonoBehaviour
     }
 
     const int BOARD_SIZE = 11;     //碁盤サイズ
-//    public static readonly int BOARD_SIZE_YOKO = 21;
-//    public static readonly int BOARD_SIZE_TATE = 12;
 
     public Image stoneImg;
     public Sprite[] stoneSprites = new Sprite[3];
@@ -48,13 +45,8 @@ public class StoneManager : MonoBehaviour
         int x = indexArray[0];
         int y = indexArray[1];
 
-        //Debug.Log("取石リスト要素数: " + prisonerList.Count);
-
-        //if (prisonerList.Count > 0)
-        //{
-        //    prisonerList = new List<int>();
-        //    //prisonerList.Clear();
-        //}
+        //Debug.Log("XY座標: " + x + "  " + y);
+        //Debug.Log("board[x, y]: " + board[x, y]);
 
         if (color == (int)State.NONE)
         {
@@ -67,9 +59,6 @@ public class StoneManager : MonoBehaviour
         }
         else if (color == (int)State.BLACK)
         {
-            //if (CheckLegal((int)State.BLACK, x, y, board, false))
-            //{
-            //Debug.Log("チェック通った！");
             //黒石の設定
             board[x, y] = (int)State.BLACK;
             stoneImg.gameObject.SetActive(true);
@@ -77,13 +66,9 @@ public class StoneManager : MonoBehaviour
             confirmButton.gameObject.SetActive(false);
             //stoneNum.text = moveCount.ToString();
             //stoneNum.color = Color.white;
-            //}
         }
         else if (color == (int)State.WHITE)
         {
-            //if (CheckLegal((int)State.WHITE, x, y, board, false))
-            //{
-            //Debug.Log("チェック通った！");
             //白石の設定
             board[x, y] = (int)State.WHITE;
             stoneImg.gameObject.SetActive(true);
@@ -91,16 +76,9 @@ public class StoneManager : MonoBehaviour
             confirmButton.gameObject.SetActive(false);
             //stoneNum.text = moveCount.ToString();
             //stoneNum.color = Color.black;
-            //}
         }
 
-        //Debug.Log("board[x, y]: " + board[x, y]);
-        //Debug.Log("XY座標: " + x + "  " + y);
-        //Debug.Log("取石リスト要素数: " + prisonerList.Count);
-
         //取れる石があれば取石リストに追加
-        //Debug.LogWarning("手数: " + moveCount + "  XY座標:  " + (x - 1) + "-" + (y - 1) + "  石の色: " + color);
-        //int prisonerAll = CheckPrisoner(color, x, y, board);
         CheckPrisoner(color, x, y, board);
         //Debug.Log("取石リスト要素数: " + prisonerList.Count);
 
@@ -240,17 +218,8 @@ public class StoneManager : MonoBehaviour
             confirmButton.gameObject.SetActive(false);
         }
 
-        //デバッグ用
-        //string debugStr = "";
-        //for (int di = 1; di < BOARD_SIZE - 1; di++)
-        //{
-        //    for (int dj = 1; dj < BOARD_SIZE - 1; dj++)
-        //    {
-        //        debugStr += board[di, dj].ToString();
-        //    }
-        //}
-
-        //Debug.LogError("デバッグ用出力 board prisoner:\n" + debugStr);
+        //現在の盤面をログ出力
+        //GoUtil.PrintBoard(board, BOARD_SIZE);
 
         return board;
     }
@@ -281,7 +250,7 @@ public class StoneManager : MonoBehaviour
         return board2;
     }
 
-    //取石を盤上から取り除くメソッド
+    //取石を制御するメソッド
     public int[,] SetPrevPrisoner(int[,] board2, int prisoner, int color)
     {
         int[] indexArray = GoUtil.TapIndexToXY(prisoner);
@@ -317,53 +286,20 @@ public class StoneManager : MonoBehaviour
 
     public void RecordMove(int color, int index, int moveCount, List<int> prisonerList, bool isKo, int koIndex)
     {
-        //List<Move> saveMoveList = ES3.Load(Key.MOVE_LIST, new List<Move>());
         GoArea.moveList.Add(new Move(color, index, moveCount, prisonerList, isKo, koIndex));
-        //ES3.Save<List<Move>>(Key.MOVE_LIST, saveMoveList);
     }
 
     public bool CheckLegalIsExist(int[,] board2, int i, int j, int color)
     {
-        //引数の碁盤配列をこのクラスの碁盤配列にコピー
-        //board = board2;
-
         bool result;
-        //int[] indexArray = GoUtil.TapIndexToXY(index);
         result = CheckLegal(color, i, j, board2);
-
-        //デバッグ用
-//        string debugStr = "\n";
-//        for (int di = 1; di < BOARD_SIZE - 1; di++)
-//        {
-//            for (int dj = 1; dj < BOARD_SIZE - 1; dj++)
-//            {
-//                if (board[di, dj] == 0)
-//                {
-//                    debugStr += "●";
-//                }
-//                else if (board[di, dj] == 1)
-//                {
-//                    debugStr += "○";
-//                }
-//                else
-//                {
-//                    debugStr += "+";
-//                }
-//                debugStr += ",";
-//            }
-//
-//            debugStr += "\n";
-//        }
-//
-//        Debug.LogError("CheckLegalIsExist -> " + result + debugStr);
-        
+       
         return result;
     }
 
     public void RemoveAtMove(int moveCount)
     {
         GoArea.moveList.RemoveAt(moveCount);
-        //ES3.Save<List<Move>>(Key.MOVE_LIST, moveList);
     }
 
     public int[,] InitBoard()
@@ -395,12 +331,7 @@ public class StoneManager : MonoBehaviour
     
     public bool CheckLegal(int color, int x, int y, int[,] board2)
     {
-        //Debug.Log("XY -> " + x + "  " + y);
-//        if (isCheck)
-//        {
-//            board = board2;
-//        }
-
+        //引数の碁盤配列をこのクラスの碁盤配列にコピー
         board = board2;
 
         //空点じゃないと置けません
@@ -408,7 +339,6 @@ public class StoneManager : MonoBehaviour
         {
             //Debug.LogError("空点じゃないよ！");
             //Debug.LogWarning("X -> " + x + "  Y -> " + y + "  Color: " + color);
-            //Debug.LogWarning("空点じゃないboard[x, y] -> " + board[x, y]);
             return false;
         }
 
@@ -421,7 +351,7 @@ public class StoneManager : MonoBehaviour
                 int index = GoUtil.XYToTapIndex(x, y);
                 if (index == prevMoveData.koIndex)
                 {
-                    //.LogError("コウだよ！");
+                    //Debug.LogError("コウだよ！");
                     //Debug.LogWarning((x - 1) + "-" + (y - 1) + "  Color: " + color);
                     return false;
                 }
@@ -435,9 +365,7 @@ public class StoneManager : MonoBehaviour
             //Debug.LogWarning((x - 1) + "-" + (y - 1) + "  Color: " + color);
             return false;
         }
-
-        //if (isCheck) board[x, y] = (int)State.NONE;
-        
+       
         board[x, y] = (int)State.NONE;
 
         /* 以上のチェックをすべてクリアできたので置けます */
@@ -571,9 +499,6 @@ public class StoneManager : MonoBehaviour
     {
         bool rtn;
 
-        //Debug.LogWarning("X-Y -> " + x + "-" + y);
-        //Debug.LogWarning("board[x, y]: " + board[x, y] + " X1: " + x + " Y1: " + y + " Index: " + GoUtil.XYToTapIndex(x, y));
-
         /* その場所は既に調べた点ならおしまい */
         if (checkBoard[x, y] == true)
         {
@@ -587,8 +512,8 @@ public class StoneManager : MonoBehaviour
         /* 何も置かれていないならばおしまい */
         if (board[x, y] == (int)State.NONE)
         {
-            //Debug.LogWarning("空点2！");
-            //Debug.LogWarning("board[x, y]: " + board[x, y] + " X2: " + x + " Y2: " + y + " Index: " + GoUtil.XYToTapIndex(x, y));
+            //Debug.LogError("空点！ DoCheckRemoveStone");
+            //Debug.LogWarning("X2: " + x + "  Y2: " + y + "  board[x, y]: " + board[x, y] + "  Index: " + GoUtil.XYToTapIndex(x, y));
             return false;
         }
 
@@ -636,10 +561,6 @@ public class StoneManager : MonoBehaviour
                 //Debug.LogWarning("探索XU: " + (x + 1) + " 探索YU: " + y + " 色: " + color);
             }
         }
-        else
-        {
-            //Debug.LogWarning("board[x, y]: " + board[x, y] + " X3: " + x + " Y3: " + y + " Index: " + GoUtil.XYToTapIndex(x, y));
-        }
 
         /* 相手の色の石があった */
         return true;
@@ -652,7 +573,7 @@ public class StoneManager : MonoBehaviour
         /* 置いた石と同じ色なら取らない */
         if (board[x, y] == color)
         {
-            //Debug.Log("置いた石と同じ色！");
+            //Debug.Log("置いた石と同じ色！ RemoveStone");
             //Debug.Log("board[x, y]: " + board[x, y] + "X: " + x + " Y: " + y);
             return 0;
         }
@@ -660,7 +581,7 @@ public class StoneManager : MonoBehaviour
         /* 空点なら取らない */
         if (board[x, y] == (int)State.NONE)
         {
-            //Debug.Log("空点！");
+            //Debug.Log("空点！ RemoveStone");
             //Debug.Log("board[x, y]: " + board[x, y] + "X: " + x + " Y: " + y);
             return 0;
         }
@@ -680,20 +601,14 @@ public class StoneManager : MonoBehaviour
 
     public int DoRemoveStone(int color, int x, int y, int prisoner)
     {
-        //Debug.Log("取石ぃぃぃ！！！  " + "X: " + x + " Y: " + y + " Color: " + color);
-
         /* 取り除かれる石と同じ色ならば石を取る */
         if (board[x, y] == color)
         {
-            //Debug.LogWarning("取れたよ！わーい！" + x + "-" + y);
+            //Debug.LogWarning("取れたよ！わーい！  XY -> " + x + "-" + y + "  Index -> " + GoUtil.XYToTapIndex(x, y));
             /* 取った石の数を１つ増やす */
             prisoner++;
             //取れる石のindexのList
-            //Debug.LogWarning("priX: " + (x - 1) + "  priY: " + (y - 1));
-            //Debug.LogWarning("board[x, y]: " + board[x, y]);
             prisonerList.Add(GoUtil.XYToTapIndex(x, y));
-
-            //Debug.LogError("取れたよ！わーいわーい！ -> " + (GoUtil.XYToTapIndex(x, y)));
 
             /* その座標に空点を置く */
             board[x, y] = (int)State.NONE;
@@ -701,25 +616,21 @@ public class StoneManager : MonoBehaviour
             /* 左を調べる */
             if (y > 1)
             {
-                //Debug.Log((x - 1) * (BOARD_SIZE - 2) + y);
                 prisoner = DoRemoveStone(color, x, y - 1, prisoner);
             }
             /* 上を調べる */
             if (x > 1)
             {
-                //Debug.Log(x * (BOARD_SIZE - 2) + (y - 1));
                 prisoner = DoRemoveStone(color, x - 1, y, prisoner);
             }
             /* 右を調べる */
             if (y < (BOARD_SIZE - 2))
             {
-                //Debug.Log((x + 1) * (BOARD_SIZE - 2) + y);
                 prisoner = DoRemoveStone(color, x, y + 1, prisoner);
             }
             /* 下を調べる */
             if (x < (BOARD_SIZE - 2))
             {
-                //Debug.Log(x * (BOARD_SIZE - 2) + (y + 1));
                 prisoner = DoRemoveStone(color, x + 1, y, prisoner);
             }
         }
@@ -729,9 +640,6 @@ public class StoneManager : MonoBehaviour
 
     public int CheckPrisoner(int color, int x, int y, int[,] board2)
     {
-        //引数の碁盤配列をこのクラスの碁盤配列にコピー
-        //board = board2;
-        
         int prisonerN;    /* 取り除かれた石の数（上） */
         int prisonerE;    /* 取り除かれた石の数（右） */
         int prisonerS;    /* 取り除かれた石の数（下） */
@@ -743,10 +651,6 @@ public class StoneManager : MonoBehaviour
         board[x, y] = color;
 
         /* 置いた石の隣に同じ色の石はあるか？ */
-        //xとyを入れ替えたけど、うまく動かなかったら元に戻す
-
-        //Debug.Log("周りに同じ石があるか判定: " + board[x + 1, y] + " " + board[x - 1, y] + " " + board[x, y + 1] + " " + board[x, y - 1]);
-        //Debug.Log("取石リスト要素数: " + prisonerList.Count);
 
 //        Debug.LogWarning("XY座標:  " + x + "-" + y);
 //        Debug.LogError("上: " + board[x + 1, y]);
@@ -761,7 +665,6 @@ public class StoneManager : MonoBehaviour
         {
             /* 同じ色の石がないならば劫かもしれない */
             isKo = true;
-            //Debug.Log("コウかも？");
         }
         else
         {
@@ -799,7 +702,7 @@ public class StoneManager : MonoBehaviour
         /* 置いた石の隣に同じ色の石がなく、取り除かれた石も１つならば劫 */
         if (isKo && prisonerAll == 1)
         {
-            //Debug.Log("コウだよ！すごーい！");
+            //Debug.LogWarning("コウだよ！");
 
             /* 劫の発生した手数を覚える */
             ko_num = GoArea.moveList.Count + 1;
@@ -835,7 +738,6 @@ public class StoneManager : MonoBehaviour
         }
 
         //Debug.LogWarning("取石総数: " + prisonerAll);
-        //Debug.Log("prisonerList.Count: " + prisonerList.Count);
 
         return prisonerAll;
     }

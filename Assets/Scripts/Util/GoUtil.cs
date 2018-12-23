@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using Const;
 using UnityEngine;
 
 public class GoUtil : MonoBehaviour {
-    static readonly string LETTERS = "@abcdefghijklmnopqrstuvxyz";
+    const string LETTERS = "@abcdefghijklmnopqrstuvxyz";
+    public const string SGF_GAME_COUNT = "SGF_GAME_COUNT";
 
     public static string fileName = "";
     public static string sgfData = "";
@@ -66,8 +66,8 @@ public class GoUtil : MonoBehaviour {
 
     public static string SaveSGF (string result, string blackPlayerName = "Black", string whitePlayerName = "White") {
         int gameCount = 0;
-        if (PlayerPrefs.HasKey (Key.SGF_GAME_COUNT)) {
-            gameCount = PlayerPrefs.GetInt (Key.SGF_GAME_COUNT, 0);
+        if (PlayerPrefs.HasKey (SGF_GAME_COUNT)) {
+            gameCount = PlayerPrefs.GetInt (SGF_GAME_COUNT, 0);
         }
 
         //対局結果を追記する
@@ -90,7 +90,7 @@ public class GoUtil : MonoBehaviour {
         sgfData = "";
 
         //ゲーム数を1加算して保存
-        PlayerPrefs.SetInt (Key.SGF_GAME_COUNT, gameCount + 1);
+        PlayerPrefs.SetInt (SGF_GAME_COUNT, gameCount + 1);
         PlayerPrefs.Save ();
         //Debug.Log("SGFファイル保存先 -> " + filePath);
 
@@ -99,8 +99,8 @@ public class GoUtil : MonoBehaviour {
 
     public static string SaveResult (string result) {
         int gameCount = 0;
-        if (PlayerPrefs.HasKey (Key.SGF_GAME_COUNT)) {
-            gameCount = PlayerPrefs.GetInt (Key.SGF_GAME_COUNT, 0);
+        if (PlayerPrefs.HasKey (SGF_GAME_COUNT)) {
+            gameCount = PlayerPrefs.GetInt (SGF_GAME_COUNT, 0);
         }
 
         //結果だけをtxtファイルとして書き出す

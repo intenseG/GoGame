@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine.UI;
 using UnityEngine.Networking;
-using Const;
 
 public class GoEstimator : MonoBehaviour
 {
@@ -17,8 +16,6 @@ public class GoEstimator : MonoBehaviour
         Success = 2,
         Error = 3
     }
-
-    public TextAsset sgfFile;
 
     // gnugoURL
     string url = "https://igo-creative.com/Gnugo/call_gnugo9.php";
@@ -33,7 +30,6 @@ public class GoEstimator : MonoBehaviour
     {
         stateNum = (int)RequestState.Processing;
         result = "";
-        //sgfFileName = fileName;
 
         // サーバーに置いてあるgnugoと通信して地合計算結果を取得する
         ConnectServer();
@@ -55,15 +51,12 @@ public class GoEstimator : MonoBehaviour
     private void ConnectServer()
     {
         //SGFの中身を取得
-        //string textLines = sgfFile.text; //SGFテキスト
-        //string sgf = textLines;
         string sgf = GoUtil.sgfData;
         Debug.Log(sgf);
 
         // サーバへPOSTするデータを設定
         Dictionary<string, string> dic = new Dictionary<string, string>();
         dic.Add("sgf", sgf);
-        //dic.Add("move", "est");
         dic.Add("komi", "7");
 
         // サーバーへPOSTするコルーチンを呼び出す

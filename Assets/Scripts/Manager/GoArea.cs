@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Const;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -199,7 +198,7 @@ public class GoArea : MonoBehaviour {
                 } else {
                     //Debug.LogWarning ("コウのルール違反！");
                     points[x, y] = (int) StoneManager.State.NONE;
-                    this.agent[agentId].AddReward (-0.1f);
+                    this.agent[agentId].AddReward (-0.01f);
                     inAction = false;
                 }
             }
@@ -220,7 +219,7 @@ public class GoArea : MonoBehaviour {
                             if (stoneList[action].CheckLegalIsExist (points, i, j, color)) {
                                 Debug.LogError ("打てる場所があります！");
                                 isFinish = false;
-                                this.agent[agentId].AddReward (-0.1f);
+                                this.agent[agentId].AddReward (-0.01f);
                                 isExist = true;
                             } else {
                                 isFinish = true;
@@ -232,6 +231,12 @@ public class GoArea : MonoBehaviour {
                     }
 
                     if (isExist) break;
+                }
+
+                //打てるところがなければパスする
+                if (isFinish) {
+                    PassMove(agentId);
+                    //isFinish = false;
                 }
             }
         }
@@ -256,6 +261,7 @@ public class GoArea : MonoBehaviour {
         int black = first == 0 ? 0 : 1;
         int white = black == 0 ? 1 : 0;
 
+        //moveListの全ての着手情報をSGF形式に変換して、GoUtilクラスのstatic変数で保持する
         GoUtil.SaveGamestate (moveList, BOARD_SIZE - 2, BOARD_SIZE - 2, 7, GoEstimator.result,
             agent[black].names[black], agent[white].names[white]);
 
@@ -295,9 +301,9 @@ public class GoArea : MonoBehaviour {
 
                 //Debug.Log (finalScore);
 
-                //対局結果を含めてSGFを保存
+                //対局結果を含めて棋譜を保存(学習を高速化したい場合はコメントアウトする)
                 GoUtil.SaveSGF (GoEstimator.result, agent[black].names[black], agent[white].names[white]);
-                //Debug.Log("SGFで保存しました！");
+                //Debug.Log("棋譜をSGF形式で保存しました！");
 
                 //現在の手番をリセット
                 currentTurn = 0;

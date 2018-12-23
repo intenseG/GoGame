@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Const;
 using MLAgents;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
@@ -16,21 +15,6 @@ public class GoAgent : Agent {
 
     //リセット時に呼ばれる
     public override void AgentReset () {
-        // turns = new List<float[]> ();
-        // float[] turnB = new float[82];
-        // for (int i = 0; i < 82; i++) {
-        //     turnB[i] = 0;
-        // }
-
-        // turns.Add (turnB);
-
-        // float[] turnW = new float[82];
-        // for (int j = 0; j < 82; j++) {
-        //     turnW[j] = 1;
-        // }
-
-        // turns.Add (turnW);
-
         names = new string[2];
         names[0] = "GoAgent0";
         names[1] = "GoAgent1";
@@ -97,10 +81,7 @@ public class GoAgent : Agent {
 
     //ステップ毎に呼ばれる
     public override void AgentAction (float[] vectorAction, string textAction) {
-        //Debug.Log((int)vectorAction[0]);
-        //Debug.Log("AgentId: " + agentId);
         if (GoArea.currentTurn != agentId) return;
-        //Debug.Log("GoArea.currentTurn != agentId OK!");
 
         if (!GoArea.isPlayMode) {
             //学習モード
@@ -120,6 +101,7 @@ public class GoAgent : Agent {
     }
 
     public void SetSelectAction (int action) {
+        //Playerの行動
         this.selectedAction = action;
         area.inAction = true;
         RequestDecision ();
@@ -131,12 +113,10 @@ public class GoAgent : Agent {
         if (area.GetTurnCount () >= GoArea.MAX_MOVE_COUNT || GoArea.isFinish) return;
 
         if (!GoArea.isPlayMode) {
-            //Debug.Log("agentId: " + agentId + "  area.inAction: " + !area.inAction + "  GoArea.currentTurn == agentId: " + (GoArea.currentTurn == agentId));
             if (!area.inAction) {
                 RequestDecision ();
             }
         } else {
-            //Debug.Log("agentId: " + agentId + "  area.inAction: " + !area.inAction + "  GoArea.currentTurn == agentId: " + (GoArea.currentTurn == agentId));
             if (!area.inAction && agentId == 0) {
                 RequestDecision ();
             }
