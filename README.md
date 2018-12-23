@@ -29,17 +29,17 @@ ML-Agentsを使い始める前に知っておくといい前提知識を以下�
 [Unity ML-Agents 環境構築(v0.6.0対応)](https://qiita.com/intenseG/items/2e4531c711fb962d0d69)
 
 ## **囲碁ゲームを作る**
-作成した囲碁ゲームはGitHubに置いてあるので、実際に動かしたい人はダウンロードしてください。
+実際に動かしたい人は、このリポジトリをダウンロードしてください。
 
 https://github.com/intenseG/GoGame
 
 ## **強化学習を使ったトレーニング**
 
-**1. Anaconda Promptを起動
+1. Anaconda Promptを起動
 2. 仮想環境を有効化
 3. ハイパーパラメータを設定
 4. 学習開始コマンドを実行
-5. Unityでゲームスタート**
+5. Unityでゲームスタート
 
 ### **Anaconda Promptを起動**
 
